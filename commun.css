@@ -1,7 +1,3 @@
-body {
-    background-color: red; /*pour voir le header, a retirer*/
-}
-
 header {
     z-index: 15;
     position: absolute;

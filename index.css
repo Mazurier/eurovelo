@@ -74,3 +74,87 @@ main {
 .velodepartarivee > * {
     width: 33.333%;
 }
+
+/*Fin partis grande image
+debut partis description*/
+
+.description {
+    margin-top: 3vw;
+    width: 60%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 3vw;
+    height: fit-content;
+}
+.grandedescription {
+    height: fit-content;
+    display: flex;
+}
+.petitedescription {
+    width: 50%;
+}
+.descriptiontitre {
+    text-align: center;
+    font-size: 2vw;
+}
+.descriptionlongue {
+    margin-top: 2vw;
+    line-height: 1.25vw;
+    color: #525252;
+    font-weight: 500;
+}
+.descrimg {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.descrformrectangle {
+    height: fit-content;
+    width: 57.5%;
+    background-color: #007c74;
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.pedalez {
+    margin-top: 3vw;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+.descrform {
+    width: 90%;
+}
+.descrform * {
+    width: 100%;
+    margin-top: 1vw;
+    height: 2vw;
+    color: black;
+    font-size: 0.7vw;
+    font-weight: 500;
+    padding-left: 1vw;
+    border: none;
+    border-radius: 5px;
+}
+.descrform button {
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5vw;
+}
+
+
+
+
+.carte {
+    background-color: aquamarine; /*placeholder*/
+    width: 50%;
+}
