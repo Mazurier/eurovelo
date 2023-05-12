@@ -3,6 +3,7 @@ body {
 }
 
 header {
+    z-index: 15;
     position: absolute;
     height: 6.75vw;
     top: 0%;
