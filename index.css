@@ -53,12 +53,15 @@ main {
     height: 2.5vw;
     width: 2.5vw;
 }
-.velocirclevert {
+.velocircle {
     width: 10px;
     height: 10px;
     content: "";
     border: 2px solid green;
     border-radius: 100%;
+}
+.velocirclered {
+    border: 2px solid red;
 }
 .velodepartarivee button {
     background-color: #007c74;
@@ -70,4 +73,4 @@ main {
 } 
 .velodepartarivee > * {
     width: 33.333%;
-} 
+}
