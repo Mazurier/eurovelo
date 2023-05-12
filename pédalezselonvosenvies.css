@@ -1,0 +1,34 @@
+.formulaire_pédalezp1 {
+  background: #007c74;
+  padding: 2% 2%;
+  margin-top: 20%;
+  margin-right: 70%;
+  font-family: "Mukta Mahee", sans-serif;
+  font-weight: 400;
+  
+}
+
+.pédalez_formulaire {
+  text-align: left;
+  display: inline-block;
+  box-sizing: border-box;
+  
+}
+
+select  .parcours_submitbutton{
+  display: flex;
+  align-items: end;
+  overflow: visible;
+  padding: 2em;
+  margin: 50%;
+  
+}
+.ligneformulairep1  {
+  margin-left: 10%;
+  
+}
+
+.parcours_submitbutton{
+    background-color:#231f20;
+    color: azure;
+}
