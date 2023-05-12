@@ -1,5 +1,5 @@
 body {
-    background-color: aquamarine; /*pour voir le header, a retirer*/
+    background-color: red; /*pour voir le header, a retirer*/
 }
 
 header {
@@ -14,8 +14,151 @@ header {
 .headerhead {
     background-color: transparent;
     height: 40%;
+    display: flex;
+    width: 100%;
+}
+.headerhead .headergauche {
+    margin-left: 0%;
 }
 .headerfoot {
     background-color: white;
     height: 60%;
+    display: flex;
+}
+.headergauche {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: fit-content;
+    margin-left: 2.5vw;
+}
+.headerlogoimg {
+    height: 2vw;
+}
+.headerreseauxplace {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgba(136, 133, 133, 0.363);
+    height: calc(6.75vw * 0.4);
+    width: calc(6.75vw * 0.42); /*calcul pour carré*/
+    margin-right: 0.8vw;
+}
+.headerreseauximg {
+    height: 1vw;
+}
+.headersearchicon {
+    height: 1.25vw;
+    margin-right: 2vw;
+}
+.headernewsletter {
+    color: white;
+    font-weight: 600;
+    font-size: .875rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: max-content;
+}
+.headerinputnewsletter {
+    margin-left: 0.8vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.headerinputtext {
+    height: 50%;
+    background-color: rgba(61, 61, 61, 0.486);
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0.5vw;
+    color: white;
+    font-size: 0.75vw;
+    font-weight: 600;
+}
+.headerinputnewsletter button {
+    height: 86.7%;
+    width: 6vw;
+    border: none;
+    background-color: #007c74;
+    color: white;
+    font-weight: 600;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.headerlogoplace {
+    display: flex;
+}
+.headerlogo {
+    height: 2.6vw;
+}
+.headerlinks {
+    margin-left: 1.5vw;
+    font-size: 0.8vw;
+    font-weight: 600;
+    display: flex;
+}
+.headerlink {
+    margin-right: 1.5vw;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.headerlink a {
+    text-decoration: none;
+    color: black;
+}
+.headerlink a:hover {
+    color: #007c74;
+}
+.headerdroite {
+    width: 100%;
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    align-items: center;
+    height: 100%;
+}
+.headerdroiteelement {
+    margin-right: 1vw;
+    height: 100%;
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    align-items: center;
+}
+.headertoprightlink {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.7vw;
+}
+.headertoprightlink:hover {
+    color: #007c74;
+}
+.headerlangueflag {
+    height: 30%;
+    border: 1px white solid;
+    margin-left: 2vw;
+}
+
+.headerlink #headeractu{
+ color: rgb(255, 98, 98);
+}
+.headerlink #headerpassport {
+    color: #007c74;
+}
+.headerlink img {
+    margin-left: 3%;
+    height: 0.8vw;
 }
