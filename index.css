@@ -1,0 +1,73 @@
+main {
+    z-index: 10;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100vw;
+}
+.accueil {
+    width: 100%;
+    height: 96vh;
+    background-image: url(img/indexbackground.webp);
+    display: flex;
+    align-items: end;
+    text-align: center;
+    justify-content: center;
+}
+.leurovelo {
+    color: white;
+    padding-bottom: 1.5vw;
+}
+.leurovetitre {
+    font-size: 5vw;
+    font-weight: 700;
+}
+.leurovetext {
+    font-size: 2vw;
+    font-weight: 300;
+}
+.velodepartarivee {
+    display: flex;
+    column-gap: 3.333%;
+    padding-top: 3vw;
+}
+.veloform {
+    background-color: white;
+    display: flex;
+    height: 2.5vw;
+    border-radius: 5px;
+}
+.veloform input {
+    border: none;
+    border-radius: 5px;
+    font-size: 0.75vw;
+    font-weight: 600;
+}
+.veloform input:focus {
+    outline:none;
+} 
+.velobefore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5vw;
+    width: 2.5vw;
+}
+.velocirclevert {
+    width: 10px;
+    height: 10px;
+    content: "";
+    border: 2px solid green;
+    border-radius: 100%;
+}
+.velodepartarivee button {
+    background-color: #007c74;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 0/7vw;
+    font-weight: 700;
+} 
+.velodepartarivee > * {
+    width: 33.333%;
+} 
