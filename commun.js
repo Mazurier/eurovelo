@@ -40,7 +40,7 @@ return `
 <div class="headerfoot" id="headfoot">
     <div class="headergauche">
         <div class="headerlogoplace">
-            <img src="https://www.lavelodyssee.com/sites/velodyssee/themes/velodyssee/logo.svg" alt="logo velodysee" class="headerlogo">
+            <img src="img/logoheader.png" alt="logo velodysee" class="headerlogo">
         </div>
         <div class="headerlinks">
             <div class="headerlink">
