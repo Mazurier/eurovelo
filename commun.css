@@ -195,4 +195,58 @@ header {
         height: 9vw;
         padding: 3vw;
     }
+
+    .navbar {
+        top: 0%;
+        left: 0%;
+        width: 100vw;
+        background-color: #050505f5;
+        height: 100vh;
+        z-index: 900;
+        position: fixed;
+        display: none;
+        color: white;
+    }
+    .navbaricon {
+        position: absolute;
+        top: 5vw;
+        right: 5vw;
+        height: 15vw;
+        width: 15vw;
+    }
+    .navbarlinks {
+        margin-top: 25vw;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .navbarmain a {
+        color: white;
+        text-decoration: none;
+        font-size: 8vw;
+        line-height: 15vw;
+        font-weight: 200;
+    }
+    .navbartrait {
+        width: 90vw;
+        margin-left: 5vw;
+        height: 0.5vw;
+        background-color: white;
+    }
+    .navbarlinkfin {
+        font-weight: 600;
+        margin-top: 4vw;
+        padding-bottom: 4vw;
+        padding-left: 10vw;
+    }
+    .navbarnews {
+        font-size: 4vw;
+        width: 100vw;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
 }
