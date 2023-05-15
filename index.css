@@ -212,6 +212,7 @@ debut partis description*/
     height: 12vw;
     width: 9vw;
 }
+/* Debut temoignages */
 
 .temoignage {
     height: 27vw;
@@ -274,25 +275,115 @@ debut partis description*/
 .temoignageabso {
     position: absolute;
     margin-bottom: 2vw;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 .temoignagebackground {
     height: 13vw;
     width: 100%;
     border-radius: 5px;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 .temoignageitem:hover > .temoignagebackground {
     filter: blur(6px);
-    transition: 0.3s;
+    transition: 0.2s;
 }
 .temoignageitem:hover > .temoignageabso {
     margin-bottom: 5vw;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 .temoignagesfavoris {
     position: absolute;
     height: 2vw;
     margin-bottom: 10.5vw;
     margin-left: 6vw;
+}
+
+/*debut grid chaleur*/
+
+
+.chaleur {
+    width: 60vw;
+    padding: 0% 20vw;
+    padding-bottom: 20vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.chaleurtitre {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 60vw;
+    font-size: 2vw;
+}
+.chaleurtext {
+    margin-top: 1vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 60vw;
+    font-size: 1vw;
+    color: #464646;
+}
+.chaleurgrid {
+    margin-top: 4vw;
+    display: grid;
+    grid-template-columns: 19vw 19vw 19vw ;
+    gap: 2vw;
+}
+.chaleurgriditem {
+    background-color: aqua; /*placeholder*/
+    height: 19vw;
+}
+.chaleurgriditem img {
+    height: 19vw;
+    width: 19vw;
+    transition: 0.2s;
+}
+.chaleurbackground {
+    height: 19vw;
+    width: 19vw;
+    transition: 0.2s;
+}
+.chaleurgridtitre {
+    width: 17vw;
+    padding: 0% 1vw;
+    position: absolute;
+    font-size: 1vw;
+    margin-top: -4vw;
+    color: white;
+    font-weight: 600;
+    transition: 0.2s;
+}
+.chaleurgridtext {
+    margin-top: 0.35vw;
+    font-size: 0.7vw;
+    font-weight: 500;
+}
+.chaleurgridnoteplace {
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: -18.5vw;
+}
+.chaleurgridnote {
+    background-color: #f59c00;
+    padding: 0.4vw 0.5vw;
+    width: fit-content;
+    color: white;
+    font-weight: 600;
+}
+
+
+
+.chaleurgriditem:hover > .chaleurbackground {
+    filter: blur(6px);
+    transition: 0.2s;
+}
+.chaleurgriditem:hover > .chaleurgridtitre {
+    margin-top: -6vw;
+    transition: 0.2s;
 }
