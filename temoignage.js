@@ -11,6 +11,9 @@ function temoignagestxt(img, titre, text) {
             ${text}
         </div>
     </div>
+    <a href="" class="temoignagesfavoris">
+        <img src="img/heart.png" class="temoignagesfavoris">
+    </a>
 </div>
     `;
   }

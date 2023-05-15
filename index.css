@@ -257,7 +257,7 @@ debut partis description*/
     width: 25vw;
 }
 
-.temoignage a {
+.temoignagetous{
     position: absolute;
     margin-top: 2vw;
     margin-left: 20vw;
@@ -289,4 +289,10 @@ debut partis description*/
 .temoignageitem:hover > .temoignageabso {
     margin-bottom: 5vw;
     transition: 0.3s;
+}
+.temoignagesfavoris {
+    position: absolute;
+    height: 2vw;
+    margin-bottom: 10.5vw;
+    margin-left: 6vw;
 }
