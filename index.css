@@ -212,6 +212,7 @@ debut partis description*/
     height: 12vw;
     width: 9vw;
 }
+/* Debut temoignages */
 
 .temoignage {
     height: 27vw;
@@ -257,7 +258,7 @@ debut partis description*/
     width: 25vw;
 }
 
-.temoignage a {
+.temoignagetous{
     position: absolute;
     margin-top: 2vw;
     margin-left: 20vw;
@@ -274,19 +275,350 @@ debut partis description*/
 .temoignageabso {
     position: absolute;
     margin-bottom: 2vw;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 .temoignagebackground {
     height: 13vw;
     width: 100%;
     border-radius: 5px;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 .temoignageitem:hover > .temoignagebackground {
     filter: blur(6px);
-    transition: 0.3s;
+    transition: 0.2s;
 }
 .temoignageitem:hover > .temoignageabso {
     margin-bottom: 5vw;
-    transition: 0.3s;
+    transition: 0.2s;
+}
+.temoignagesfavoris {
+    position: absolute;
+    height: 2vw;
+    margin-bottom: 10.5vw;
+    margin-left: 6vw;
+}
+
+/*debut grid chaleur*/
+
+
+.chaleur {
+    width: 60vw;
+    padding: 0% 20vw;
+    padding-bottom: 20vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.chaleurtitre {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 60vw;
+    font-size: 2vw;
+}
+.chaleurtext {
+    margin-top: 1vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 60vw;
+    font-size: 1vw;
+    color: #464646;
+}
+.chaleurgrid {
+    margin-top: 4vw;
+    display: grid;
+    grid-template-columns: 19vw 19vw 19vw ;
+    gap: 2vw;
+}
+.chaleurgriditem {
+    background-color: aqua; /*placeholder*/
+    height: 19vw;
+}
+.chaleurgriditem img {
+    height: 19vw;
+    width: 19vw;
+    transition: 0.2s;
+}
+.chaleurbackground {
+    height: 19vw;
+    width: 19vw;
+    transition: 0.2s;
+}
+.chaleurgridtitre {
+    width: 17vw;
+    padding: 0% 1vw;
+    position: absolute;
+    font-size: 1vw;
+    margin-top: -4vw;
+    color: white;
+    font-weight: 600;
+    transition: 0.2s;
+}
+.chaleurgridtext {
+    margin-top: 0.35vw;
+    font-size: 0.7vw;
+    font-weight: 500;
+}
+.chaleurgridnoteplace {
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: -18.5vw;
+}
+.chaleurgridnote {
+    background-color: #f59c00;
+    padding: 0.4vw 0.5vw;
+    width: fit-content;
+    color: white;
+    font-weight: 600;
+    z-index: 15;
+}
+
+
+
+.chaleurgriditem:hover > .chaleurbackground {
+    filter: blur(6px);
+    transition: 0.2s;
+}
+.chaleurgriditem:hover > .chaleurgridtitre {
+    margin-top: -6vw;
+    transition: 0.2s;
+}
+
+.velodepartariveephone {
+    display: none;
+}
+.cartephone {
+    display: none;
+}
+
+
+@media (max-width:600px) {
+    .accueil {
+        height: 120vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        align-items: center;
+    }
+    .leurovelo {
+        padding-bottom: 0%;
+    }
+    .leurovetitre {
+        font-size: 10vw;
+    }
+    .leurovetext {
+        font-size: 8vw;
+        padding: 0% 3vw;
+    }
+    .velodepartarivee {
+        display: none;
+    }
+    .leurovelo {
+        margin-top: 30vw;
+    }
+    .velodepartariveephone {
+        display: block;
+        text-decoration: none;
+        color: white;
+        background-color: #007c74;
+        width: 60%;
+        padding: 2.25vw 3vw;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 3.5vw;
+        margin-left: 17.5%;
+        margin-top: 28vw;
+    }
+    
+
+    .description {
+        width: 80%;
+        padding: 0 10%;
+    }
+    .grandedescription {
+        display: block;
+    }
+    .petitedescription {
+        width: 100%;
+    }
+    .descriptiontitre {
+        font-size: 9vw;
+        font-weight: 100;
+    }
+    .descriptionlongue {
+        text-align: center;
+        line-height: 5vw;
+    }
+    .cartephone {
+        margin-top: 10vw;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 98%;
+        background-color: #202020;
+        color: white;
+        font-weight: 600;
+        border-radius: 5px;
+        font-size: 3.5vw;
+        padding: 3% 2%;
+    }
+    .descrformrectangle {
+        width: 100%;
+    }
+    .pedalez {
+        font-size: 7vw;
+    }
+    .descrform * {
+        height: 15vw;
+        margin-top: 5vw;
+        font-size: 4.5vw;
+        padding-left: 5vw;
+    }
+    .descrform button {
+        padding-left: 0%;
+    }
+
+
+
+    .trouveaccueil {
+        margin: 2%;
+    }
+    .trouvetitre {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        font-size: 6vw;
+    }
+    .trouvetitre img {
+        width: 20vw
+    }
+    .trouvetxt {
+        font-size: 3.5vw;
+    }
+    .trouvevelo {
+        grid-template-columns: 100%;
+    }
+    .trouveveloitem {
+        height: 30vw;
+    }
+    .trouvebackground {
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 95vw;
+        height: 30vw;
+    }
+    .trouvetxtimg {
+        width: 80vw;
+        font-size: 6vw;
+    }
+
+
+    .temoignage {
+        margin-top: 60vw;
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .temoignagetitre {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: black;
+        font-size: 10vw;
+        margin-left: 0%;
+        padding: 0% 4vw;
+    }
+    .temoignagetitre div {
+        font-size: 5vw;
+        margin-top: 7vw;
+    }
+    .temoignageitem {
+        display: none;
+        width: 90vw;
+        height: 40vw;
+        margin: 0 5vw;
+    }
+    .temoignageitem:first-child {
+        display: flex;
+    }
+    .temoignagebackground {
+        height: 40vw;
+        width: 90vw;
+    }
+    .temoignageitemtext {
+        display: none;
+    }
+    .temoignagebox {
+        width: 100vw;
+    }
+    .temoignageitemtitre {
+        width: 84%;
+        font-size: 5vw;
+        padding: 0 8%;
+    }
+    .temoignagesfavoris {
+        display: none;
+    }
+    .temoignagetous {
+        width: 55vw;
+        margin-left: 0;
+        margin-top: 110vw;
+        height: 10vw;
+        border: black solid 2px;
+        color: black;
+        font-size: 3.5vw;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .chaleur {
+        margin-top: 55vw;
+        width: 90vw;
+        padding: 0% 5vw;
+    }
+    .chaleurtitre {
+        font-size: 6vw;
+        word-break: break-all;
+        width: 100%;
+    }
+    .chaleurtext {
+        width: 100%;
+        font-size: 4vw;
+    }
+    .chaleurgrid {
+        grid-template-columns: 85vw;
+        gap: 3%;
+    }
+    .chaleurgriditem {
+        height: 30vw;
+    }
+    .chaleurgriditem img {
+        width: 85vw;
+        height: 30vw;
+    }
+    .chaleurgridnoteplace {
+        margin-top: -30vw;
+    }
+    .chaleurgridtitre {
+        width: 83vw;
+        padding: 1vw;
+        margin-top: -17vw;
+        font-size: 6vw;
+    }
+    .chaleurgriditem:hover >.chaleurgridtitre {
+        margin-top: -17vw;
+    }
 }
