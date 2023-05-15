@@ -89,7 +89,6 @@ debut partis description*/
 .grandedescription {
     height: fit-content;
     display: flex;
-    background-color: burlywood;
 }
 .petitedescription {
     width: 50%;
@@ -177,7 +176,63 @@ debut partis description*/
     margin-top: 1vw;
     font-size: 0.65vw;
 }
-.trouvetrello {
+.trouvestrapi {
     margin-top: 1vw;
     background-color: darkgoldenrod;
+}
+
+
+.temoignage {
+    height: 27vw;
+    background-image: url(img/temoignage.jpg);
+    margin-bottom: 3vw;
+    background-repeat: no-repeat;
+    padding: 5vw 2%;
+}
+.temoignagetitre {
+    color: white;
+    font-size: 2.5vw;
+    margin-left: 20%;
+}
+.temoignagesoustitre {
+    font-size: 1vw;
+}
+.temoignagebox {
+    margin-top: 6%;
+    display: flex;
+    margin-left: -2.5vw;
+}
+.temoignageitem {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 1vw;
+    height: 13vw;
+    width: 35vw;
+    color: white;
+    display: flex;
+    align-items: end;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.temoignageitemtitre {
+    font-size: 1.25vw;
+}
+.temoignageitemtext {
+    padding-bottom: 10%;
+}
+
+.temoignage a {
+    position: absolute;
+    margin-top: 2vw;
+    margin-left: 20vw;
+    background-color: transparent;
+    border: white 2px solid;
+    padding: 0.75% 0.25%;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.8vw;
+    box-shadow: 2px 1px 10px rgb(77, 77, 77);
 }
