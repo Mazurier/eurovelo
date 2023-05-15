@@ -59,5 +59,43 @@ async function loadTemoignages() {
         }
     }
 }
+  function chaleurgridtxt(titre, img, txt, note) {
+
+    let notes = '';
+    if (note !== '') {
+        notes += `<div class="chaleurgridnoteplace">
+        <div class="chaleurgridnote">
+            ${note}
+        </div>
+    </div>`;
+    }
+
+    let text = '';
+    if (txt !== '') {
+        text += `<div class="chaleurgridtext">
+        ${txt}
+    </div>`;
+    }
+
+    return `
+    <div class="chaleurgriditem">
+        <img src="img/${img}" alt="" class="chaleurbackground">
+        <div class="chaleurgridtitre">
+            ${titre}
+            ${text}
+        </div>
+        ${notes}
+    </div>
+    `;
+  }
 
 loadTemoignages();
+
+  let chaleurgrid = '';
+
+  //dans l'ordre ("titre" "img" "texte" "note") note & texte pas obligatoire laisser "" vide
+  chaleurgrid += chaleurgridtxt("Placeholder","chaleurgrid.png", "Texte", "2002");
+  chaleurgrid += chaleurgridtxt("Placeholder","chaleurgrid.png", "Texte", "");
+  chaleurgrid += chaleurgridtxt("Placeholder","chaleurgrid.png", "", "2222016");
+  chaleurgrid += chaleurgridtxt("Placeholder","chaleurgrid.png", "", "");
+  document.getElementById("chaleurgrid").innerHTML = chaleurgrid;

@@ -83,54 +83,24 @@ document.getElementById("header").innerHTML=header();
 
 
 /*
-var navlinkvar='';
+var navbarvar='';
 
-function navlink(){
+function navbar(){
 
 return `
-<a href="javascript:void(0);" onclick="navbar()">
-        <img src="img/menu.png" class="phonemenu">
-        <i class="fa fa-bars"></i> <!-- Fuck yeah navbar working holy shit-->
-    </a>
-    <div class="links" id="links">
-        <a href="staff.html">
-            <div class="phonenav">
-                Staff
-            </div>
-        </a>
-        <a href="futureplan.html">
-            <div class="phonenav">
-                What's planned
-            </div>
-        </a>
-        <a href="info.html">
-            <div class="phonenav">
-                Informations
-            </div>
-        </a>
-        <a href="discord.html">
-            <div class="phonenav">
-                Discord servers
-            </div>
-        </a>
-        <a href="newsletter.html">
-            <div class="phonenav">
-                Newsletter
-            </div>
-        </a>
-    </div>
+
 `
 
 }
 
-navlinkvar = navlinkvar + navlink() 
+navbarvar = navbarvar + navbar() 
 
-document.getElementById("navlink").innerHTML=navlinkvar
-
-
+document.getElementById("navbar").innerHTML=navbarvar
 
 
 
+
+/*
 
 function navbar() {
     var x = document.getElementById("links");
