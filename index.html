@@ -17,10 +17,20 @@
     <link rel="stylesheet" href="commun.css">
     <link rel="stylesheet" href="index.css">
     <script src="header.js"></script>
+    <script src="navbar.js"></script>
 </head>
 <body>
 
     <header id="header"></header>
+
+    <header id="headerphone">
+        <div id="navlink">
+            <img src="img/menu.png" class="burgermenu" onclick="navbar()">
+            
+        </div>
+        <img src="img/logoheader.png" alt="" class="logoheader">
+            <img src="img/search.png" alt="" class="headersearchicon">
+    </header>
     
 
     <main>
@@ -47,6 +57,9 @@
                     </div>
                     <button type="submit">CALCULER MON ITINÉRAIRE</button>
                 </form>
+                <a href="" class="velodepartariveephone">
+                    CALCULER MON ITINÉRAIRE
+                </a>
             </div>
         </div> 
 
@@ -66,6 +79,9 @@
                     </div>
                     <div class="descrimg">
                         <img src="img/descimg.jpg" alt="">
+                    </div>
+                    <div class="cartephone">
+                        VOIR LA CARTE DE L'ITINÉRAIRE
                     </div>
                     <div class="descrformrectangle">
                         <div class="pedalez">
@@ -119,7 +135,7 @@
             <div class="trouveaccueil">
                 <div class="trouvetitre">
                     <img src="img/veloicon.png" alt="icone velo">
-                    Trouver mon Accueil vélo
+                    <div>Trouver mon Accueil vélo</div>
                 </div>
                 <div class="trouvetxt">
                     Accueil Vélo est une marque qui garantit des services de qualité auprès des cyclistes le long de l'itinéraire

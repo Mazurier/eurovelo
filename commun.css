@@ -160,3 +160,39 @@ header {
     margin-left: 3%;
     height: 0.8vw;
 }
+
+#headerphone {
+    display: none;
+
+    height: 24vw;
+    width: 100vw;
+    background-color: white;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+.burgermenu {
+    height: 18vw;
+    padding: 3vw;
+}
+
+
+@media (max-width:600px) {
+    #header {
+        display: none;
+    }
+    #headerphone {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logoheader {
+        height: 18vw;
+        padding: 3v;
+    }
+    .headersearchicon {
+        height: 9vw;
+        padding: 3vw;
+    }
+}
