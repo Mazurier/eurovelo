@@ -176,11 +176,42 @@ debut partis description*/
     margin-top: 1vw;
     font-size: 0.65vw;
 }
-.trouvestrapi {
-    margin-top: 1vw;
-    background-color: darkgoldenrod;
+.trouvevelo {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 9vw 9vw 9vw 9vw ;
+    gap: 5%;
 }
-
+.trouveveloitem {
+    height: 12vw;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 6px;
+} 
+.trouvetxtimg {
+    position: absolute;
+    color: white;
+    font-size: 0.8vw;
+    font-weight: 700;
+    width: 10vw;
+}
+.trouveveloitem:hover > .trouvebackground{
+    filter: blur(3px);
+}
+.nodeco {
+    text-decoration: none;
+}
+.trouvebackground {
+    opacity: 50%;
+    top: 0%;
+    left: 0%;
+    height: 12vw;
+    width: 9vw;
+}
 
 .temoignage {
     height: 27vw;
