@@ -635,4 +635,31 @@ debut partis description*/
     .chaleurgriditem:hover >.chaleurgridtitre {
         margin-top: -17vw;
     }
+
+
+    .navbar {
+        top: 0%;
+        left: 0%;
+        width: 100vw;
+        background-color: #050505f5;
+        height: 100vh;
+        z-index: 900;
+        position: fixed;
+        display: flex;
+        color: white;
+    }
+    .navbaricon {
+        position: absolute;
+        top: 5vw;
+        right: 5vw;
+        height: 15vw;
+        width: 15vw;
+        background-color: aqua;
+    }
+    .navbarmain {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
 }
