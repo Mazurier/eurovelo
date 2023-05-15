@@ -245,12 +245,16 @@ debut partis description*/
     text-align: center;
     justify-content: center;
     border-radius: 10px;
+    background-color: black;
 }
 .temoignageitemtitre {
     font-size: 1.25vw;
+    font-weight: 600;
+    width: 24vw;
+    margin-left: 0.5vw;
 }
 .temoignageitemtext {
-    padding-bottom: 10%;
+    width: 25vw;
 }
 
 .temoignage a {
@@ -266,4 +270,23 @@ debut partis description*/
     font-weight: 600;
     font-size: 0.8vw;
     box-shadow: 2px 1px 10px rgb(77, 77, 77);
+}
+.temoignageabso {
+    position: absolute;
+    margin-bottom: 2vw;
+    transition: 0.3s;
+}
+.temoignagebackground {
+    height: 13vw;
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.temoignageitem:hover > .temoignagebackground {
+    filter: blur(6px);
+    transition: 0.3s;
+}
+.temoignageitem:hover > .temoignageabso {
+    margin-bottom: 5vw;
+    transition: 0.3s;
 }

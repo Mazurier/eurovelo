@@ -1,8 +1,9 @@
 function temoignagestxt(img, titre, text) {
 
     return `
-    <div class="temoignageitem" style="background-image: url(img/${img});">
-    <div>
+    <div class="temoignageitem">
+    <img src="img/${img}" class="temoignagebackground">
+    <div class="temoignageabso">
         <div class="temoignageitemtitre">
             ${titre}
         </div>
