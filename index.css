@@ -169,7 +169,9 @@ debut partis description*/
     margin-left: 17%;
     margin-right: 17%;
     padding-top: 10vw;
+    font-family: 'Wix Madefor Display', sans-serif;
 }
+
 .trouvetitre {
     font-size: 1.85vw;
     display: flex;
@@ -234,9 +236,11 @@ debut partis description*/
     color: white;
     font-size: 2.5vw;
     margin-left: 20%;
+    font-family: 'Urbanist', sans-serif;
 }
 .temoignagesoustitre {
     font-size: 1vw;
+    font-family: 'Wix Madefor Display', sans-serif;
 }
 .temoignagebox {
     margin-top: 6%;
@@ -268,6 +272,7 @@ debut partis description*/
 }
 
 .temoignagetous{
+    font-family: 'Urbanist', sans-serif;
     position: absolute;
     margin-top: 2vw;
     margin-left: 20vw;
