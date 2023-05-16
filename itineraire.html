@@ -7,6 +7,8 @@
     <title>Eurovelo5</title>
     <link rel="stylesheet" href="commun.css">
     <link rel="stylesheet" href="itineraire.css">
+    <script src="navbar.js"></script>
+    <script src="header.js"></script>
 </head>
 <body>
 
@@ -19,12 +21,42 @@
 
     <main>
         <div class="mainhead">
+            <img src="img/etapesicon.png" alt="" class="etapesicon">
             ETAPES
+        </div>
+        <div class="planif">
+            <div class="planifcontent">
+                Planifier un itinéraire sur cette véloroute
+                <form class="planifform">
+                    <select name="depart" id="depart" required>
+                        <option value="depart" disabled>Etape de départ</option>
+                        <option value="ville1">Ville1</option>
+                        <option value="ville2">Ville2</option>
+                        <option value="ville3">Ville3</option>
+                    </select>
+                    <select name="arrivee" id="arrivee" required>
+                        <option value="depart" disabled>Etape d'arrivée</option>
+                        <option value="ville1">Ville1</option>
+                        <option value="ville2">Ville2</option>
+                        <option value="ville3">Ville3</option>
+                    </select>
+                    <button type="submit">PLANIFIER MON ITINÉRAIRE</button>
+                </form>
+            </div>
+            <div class="download">
+                <a href=""> <img src="img/download.png" alt=""> TÉLÉCHARGER LE .GPX DE L'EUROVELO</a>
+            </div>
+            <div class="etapesgrid" id="etapes">
+                
+
+
+
+
+            </div>
         </div>
     </main>
     
     <script src="commun.js"></script>
-    <script src="navbar.js"></script>
-    <script src="header.js"></script>
+    <script src="itineraire.js"></script>
 </body>
 </html>

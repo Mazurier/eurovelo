@@ -1,4 +1,9 @@
-  function trouvevelotxt(lien, img, text) {
+const strapiUrl = "http://90.110.218.245:5002";
+const endPointTemoignages ="/api/temoignages?sort=id&populate=*";
+const endPointGrid ="/api/elements-chaleur?sort=id&populate=*";
+
+
+ function trouvevelotxt(lien, img, text) {
 
     return `
     <a href="${lien}" class="nodeco">
@@ -22,11 +27,10 @@
   trouvevelo += trouvevelotxt("","trouve4.png", "LOUEURS & RÉPARATEURS DE VÉLO");
   document.getElementById("trouvevelo").innerHTML = trouvevelo;
 
-const strapiUrl = "http://90.110.218.245:5002";
-const endPointTemoignages ="/api/temoignages?sort=id&populate=*";
-let TemoignagesContainer = document.getElementById ('temoignages');
+
 
 async function loadTemoignages() {
+    let containerTemoignages = document.getElementById('temoignages')
     let response = await fetch(strapiUrl + endPointTemoignages);
     if (response.ok) {
         let json = await response.json();
@@ -53,49 +57,48 @@ async function loadTemoignages() {
 
             item.appendChild(image);
             item.appendChild(container);
-            TemoignagesContainer.appendChild(item);
+            containerTemoignages.appendChild(item);
             container.appendChild(title);
             container.appendChild(text);
         }
     }
 }
-  function chaleurgridtxt(titre, img, txt, note) {
 
-    let notes = '';
-    if (note !== '') {
-        notes += `<div class="chaleurgridnoteplace">
-        <div class="chaleurgridnote">
-            ${note}
-        </div>
-    </div>`;
-    }
+loadTemoignages()
 
-    let text = '';
-    if (txt !== '') {
-        text += `<div class="chaleurgridtext">
-        ${txt}
-    </div>`;
-    }
+async function loadGrid() {
+  let containerGrid = document.getElementById('chaleurgrid')
+  let response = await fetch(strapiUrl + endPointGrid);
+  if (response.ok) {
+      let json = await response.json();
+      for (let grid of json.data) {
+          console.log(grid);
 
-    return `
-    <div class="chaleurgriditem">
-        <img src="img/${img}" alt="" class="chaleurbackground">
-        <div class="chaleurgridtitre">
-            ${titre}
-            ${text}
-        </div>
-        ${notes}
-    </div>
-    `;
+          let item = document.createElement('div');
+          item.className = "griditem";
+
+          let image = document.createElement('img');
+          image.src = strapiUrl+grid.attributes.Image.data.attributes.url;
+          image.className = 'gridbackground';
+
+          let container = document.createElement('div');
+          container.className = "gridabso";
+
+          let title = document.createElement('div');
+          title.className = "griditemtitre";
+          title.innerHTML = grid.attributes.Titre;
+
+          let text = document.createElement('div');
+          text.className ="griditemtext";
+          text.innerHTML = grid.attributes.SousTitre;
+
+          item.appendChild(image);
+          item.appendChild(container);
+          containerGrid.appendChild(item);
+          container.appendChild(title);
+          container.appendChild(text);
+      }
   }
+}
 
-loadTemoignages();
-
-  let chaleurgrid = '';
-
-  //dans l'ordre ("titre" "img" "texte" "note") note & texte pas obligatoire laisser "" vide
-  chaleurgrid += chaleurgridtxt("Placeholder","chaleurgrid.png", "Texte", "2002");
-  chaleurgrid += chaleurgridtxt("Placeholder","chaleurgrid.png", "Texte", "");
-  chaleurgrid += chaleurgridtxt("Placeholder","chaleurgrid.png", "", "2222016");
-  chaleurgrid += chaleurgridtxt("Placeholder","chaleurgrid.png", "", "");
-  document.getElementById("chaleurgrid").innerHTML = chaleurgrid;
+loadGrid();
