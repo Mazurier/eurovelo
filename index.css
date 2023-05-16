@@ -329,13 +329,16 @@ debut partis description*/
     align-items: center;
 }
 .chaleurtitre {
+    font-family: 'Urbanist', sans-serif;
     display: flex;
     text-align: center;
     justify-content: center;
     width: 60vw;
     font-size: 2vw;
+    
 }
 .chaleurtext {
+    font-family: 'Wix Madefor Display', sans-serif;
     margin-top: 1vw;
     display: flex;
     text-align: center;
