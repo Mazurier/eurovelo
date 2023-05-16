@@ -6,6 +6,12 @@ body, html {
     background-color: white;
     z-index: 30;
 }
+.headerhead * {
+    color: black;
+}
+.headerinputtext {
+    color: white;
+}
 main {
     
     margin-top: 6.75vw;

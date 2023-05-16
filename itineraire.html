@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="itineraire.css">
     <script src="navbar.js"></script>
     <script src="header.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+     <script src="./node_modules/leaflet-plugins/layer/vector/GPX.js"></script>
 </head>
 <body>
 
@@ -50,12 +58,15 @@
                 <div class="etapesgrid" id="etapes"></div>
             </div>
         </div>
-        <div class="mapplace">a</div>
+        <div class="mapplace" id="map">a</div>
     </main>
-        
-    </div>
     
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
+
     <script src="commun.js"></script>
     <script src="itineraire.js"></script>
+    <script src="map.js"></script>
 </body>
 </html>
