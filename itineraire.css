@@ -1,0 +1,26 @@
+body, html {
+    background: aqua;
+    margin: 0%;
+}
+main {
+    width: 40vw;
+    background-color: blueviolet;
+    margin-top: 6.75vw;
+    height: calc(100vh - 6.75vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mainhead {
+    width: 100%;
+    background-color: white;
+    color: #007c74;
+    border-bottom: #007c74 3px solid;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0.75vw 0;
+    font-size: 0.66vw;
+    font-weight: 700;
+}

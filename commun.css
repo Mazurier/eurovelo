@@ -22,6 +22,7 @@ header {
     background-color: white;
     height: 60%;
     display: flex;
+    box-shadow: 0px 1px 6px 1px rgb(206, 206, 206);
 }
 .headergauche {
     display: flex;
@@ -174,6 +175,12 @@ header {
 .burgermenu {
     height: 18vw;
     padding: 3vw;
+}
+#headerphone {
+    display: none;
+}
+.navbar {
+    display: none;
 }
 
 
