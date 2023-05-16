@@ -20,41 +20,40 @@
     <div class="navbar" id="navbar"></div>
 
     <main>
-        <div class="mainhead">
-            <img src="img/etapesicon.png" alt="" class="etapesicon">
-            ETAPES
-        </div>
-        <div class="planif">
-            <div class="planifcontent">
-                Planifier un itinéraire sur cette véloroute
-                <form class="planifform">
-                    <select name="depart" id="depart" required>
-                        <option value="depart" disabled>Etape de départ</option>
-                        <option value="ville1">Ville1</option>
-                        <option value="ville2">Ville2</option>
-                        <option value="ville3">Ville3</option>
-                    </select>
-                    <select name="arrivee" id="arrivee" required>
-                        <option value="depart" disabled>Etape d'arrivée</option>
-                        <option value="ville1">Ville1</option>
-                        <option value="ville2">Ville2</option>
-                        <option value="ville3">Ville3</option>
-                    </select>
-                    <button type="submit">PLANIFIER MON ITINÉRAIRE</button>
-                </form>
+        <div class="navigation">
+            <div class="mainhead">
+                <img src="img/etapesicon.png" alt="" class="etapesicon">
+                ETAPES
             </div>
-            <div class="download">
-                <a href=""> <img src="img/download.png" alt=""> TÉLÉCHARGER LE .GPX DE L'EUROVELO</a>
-            </div>
-            <div class="etapesgrid" id="etapes">
-                
-
-
-
-
+            <div class="planif">
+                <div class="planifcontent">
+                    Planifier un itinéraire sur cette véloroute
+                    <form class="planifform">
+                        <select name="depart" id="depart" required>
+                            <option value="depart" disabled>Etape de départ</option>
+                            <option value="ville1">Ville1</option>
+                            <option value="ville2">Ville2</option>
+                            <option value="ville3">Ville3</option>
+                        </select>
+                        <select name="arrivee" id="arrivee" required>
+                            <option value="depart" disabled>Etape d'arrivée</option>
+                            <option value="ville1">Ville1</option>
+                            <option value="ville2">Ville2</option>
+                            <option value="ville3">Ville3</option>
+                        </select>
+                        <button type="submit">PLANIFIER MON ITINÉRAIRE</button>
+                    </form>
+                </div>
+                <div class="download">
+                    <a href=""> <img src="img/download.png" alt=""> TÉLÉCHARGER LE .GPX DE L'EUROVELO</a>
+                </div>
+                <div class="etapesgrid" id="etapes"></div>
             </div>
         </div>
+        <div class="mapplace">a</div>
     </main>
+        
+    </div>
     
     <script src="commun.js"></script>
     <script src="itineraire.js"></script>
