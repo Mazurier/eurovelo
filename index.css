@@ -265,12 +265,14 @@ debut partis description*/
     background-color: black;
 }
 .temoignageitemtitre {
+    font-family: 'Wix Madefor Display', sans-serif;
     font-size: 1.25vw;
     font-weight: 600;
     width: 24vw;
     margin-left: 0.5vw;
 }
 .temoignageitemtext {
+    font-family: 'Wix Madefor Display', sans-serif;
     width: 25vw;
 }
 
@@ -329,6 +331,7 @@ debut partis description*/
     align-items: center;
 }
 .chaleurtitre {
+    font-family: 'Urbanist', sans-serif;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -336,6 +339,7 @@ debut partis description*/
     font-size: 2vw;
 }
 .chaleurtext {
+    font-family: 'Wix Madefor Display', sans-serif;
     margin-top: 1vw;
     display: flex;
     text-align: center;
@@ -651,6 +655,6 @@ debut partis description*/
         display: none;
     }
 
-
     
+
 }
