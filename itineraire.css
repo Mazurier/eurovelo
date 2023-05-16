@@ -4,12 +4,13 @@ body, html {
 }
 main {
     width: 40vw;
-    background-color: blueviolet;
+    background-color: white;
     margin-top: 6.75vw;
     height: calc(100vh - 6.75vw);
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-y: scroll;
 }
 .mainhead {
     width: 100%;
@@ -20,7 +21,128 @@ main {
     align-items: center;
     text-align: center;
     justify-content: center;
-    padding: 0.75vw 0;
-    font-size: 0.66vw;
+    padding: 0.25vw 0;
+    font-size: 0.75vw;
     font-weight: 700;
+    height: 2.4vw;
+}
+.etapesicon {
+    width: 2.5vw;
+}
+.planif {
+    height: 6vw;
+    background-color: #475995;
+    width: 100%;
+    color: white;
+}
+.planifcontent {
+    width: auto;
+    padding: 1vw;
+    font-weight: 600;
+}
+.planifform {
+    margin: 0.5vw 0;
+    display: flex;
+    justify-content: space-around;
+}
+.planifform * {
+    width: 30%;
+    height: 2.5vw;
+    padding-left: 0.75vw;
+    font-weight: 700;
+    font-size: 0.75vw;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.24);
+}
+.planifform button {
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    border-radius: 4px;
+    color: white;
+    height: 2.30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0%;
+}
+.download {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0.5vw 0;
+}
+.download a {
+    text-decoration: none;
+    color: #007c74;
+    font-weight: 600;
+    font-size: 0.65vw;
+}
+.etapesgrid {
+    display: grid;
+    grid-template-columns: 100%;
+    position: relative;
+    gap: 2%;
+}
+.etapesgriditem {
+    height: 10vw;
+    display: flex;
+}
+.etapeskilometre {
+    position: absolute;
+    background-color: rgb(226, 226, 226);
+    color: black;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 1.75vw;
+    width: 5vw;
+    margin-top: 1vw;
+    font-size: 0.75vw;
+    font-weight: 500;
+}
+.etapesimg {
+    height: 10vw;
+}
+.etapesbandeau {
+    width: 30vw;
+    height: 1.5vw;
+    display: flex;
+    align-items: center;
+    font-size: 0.75vw;
+    font-weight: 600;
+    justify-content: space-between;
+}
+.etapescat {
+    height: 100%;
+    width: 26vw;
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+    background-color: #f59c00;
+}
+.etapesfavoris {
+    height: 1.75vw;
+    background-color: white;
+    margin-right: 5px;
+}
+.difficulte {
+    padding: 1vw 1.25vw;
+    font-size: 0.66vw;
+    font-weight: 500;
+    color: rgb(105, 200, 255); /*A changer avec js*/
+}
+.etapestrajet {
+    margin-left: 1vw;
+    color: black;
+    font-weight: 600;
+    font-size: 1.25vw;
+}
+.etapesdescription {
+    margin-left: 1vw;
+    margin-top: 0.66vw;
+    color: rgb(97, 97, 97);
+    font-weight: 500;
 }
