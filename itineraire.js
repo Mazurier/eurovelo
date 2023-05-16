@@ -6,7 +6,7 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
             ${kilo} km
         </div>
         <img src="img/${img}" alt="" class="etapesimg">
-        <div>
+        <div class="smallmargintop">
             <div class="etapesbandeau">
                 <div class="etapescat">
                     ${cat}
