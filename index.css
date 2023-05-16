@@ -211,7 +211,7 @@ debut partis description*/
     color: white;
     font-size: 0.8vw;
     font-weight: 700;
-    width: 10vw;
+    width: 9vw;
 }
 .trouveveloitem:hover > .trouvebackground{
     filter: blur(3px);
