@@ -265,12 +265,14 @@ debut partis description*/
     background-color: black;
 }
 .temoignageitemtitre {
+    font-family: 'Wix Madefor Display', sans-serif;
     font-size: 1.25vw;
     font-weight: 600;
     width: 24vw;
     margin-left: 0.5vw;
 }
 .temoignageitemtext {
+    font-family: 'Wix Madefor Display', sans-serif;
     width: 25vw;
 }
 
