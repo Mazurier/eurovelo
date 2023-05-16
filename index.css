@@ -370,6 +370,7 @@ debut partis description*/
     transition: 0.2s;
 }
 .griditemtitre {
+    font-family: 'Wix Madefor Display', sans-serif;
     width: 17vw;
     padding: 0% 1vw;
     position: absolute;
@@ -380,6 +381,7 @@ debut partis description*/
     transition: 0.2s;
 }
 .griditemtext {
+    font-family: 'Wix Madefor Display', sans-serif;
     width: 17vw;
     position: absolute;
     padding: 0% 1vw;
