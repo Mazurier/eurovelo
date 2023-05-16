@@ -8,6 +8,7 @@ header {
     display: flex;
     flex-direction: column;
     font-family: 'Wix Madefor Display', sans-serif;
+    box-shadow: 0px 1px 10px 1px rgb(61, 61, 61);
 }
 .headerhead {
     background-color: transparent;
@@ -174,6 +175,12 @@ header {
 .burgermenu {
     height: 18vw;
     padding: 3vw;
+}
+#headerphone {
+    display: none;
+}
+.navbar {
+    display: none;
 }
 
 

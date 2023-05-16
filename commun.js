@@ -40,11 +40,13 @@ return `
 <div class="headerfoot" id="headfoot">
     <div class="headergauche">
         <div class="headerlogoplace">
+        <a href="index.html">
             <img src="img/logoheader.png" alt="logo velodysee" class="headerlogo">
+            </a>
         </div>
         <div class="headerlinks">
             <div class="headerlink">
-                <a href="">L'ITINÉRAIRE</a>
+                <a href="itineraire.html">L'ITINÉRAIRE</a>
             </div>
             <div class="headerlink">
                 <a href="">TÉMOIGNAGES</a>
@@ -92,7 +94,7 @@ return `
         <div class="navbarmain">
             <div class="navbarlinks">
                 <a href="index.html">Accueil</a>
-                <a href="">L'itinéraire</a>
+                <a href="itineraire.html">L'itinéraire</a>
                 <a href="">Témoignages</a>
                 <a href="">Infos Pratiques</a>
                 <a href="">Suggestions</a>

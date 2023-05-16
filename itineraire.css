@@ -1,0 +1,10 @@
+body, html {
+    background: aqua;
+    margin: 0%;
+}
+main {
+    width: 40vw;
+    background-color: blueviolet;
+    margin-top: 6.75vw;
+    height: calc(100vh - 6.75vw);
+}
