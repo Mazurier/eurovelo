@@ -49,12 +49,15 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
     let response = await fetch(strapiUrl + endPointEtapes);
     if (response.ok) {
         let json = await response.json();
+        numID = 0;
         for (let etapes of json.data) {
             console.log(etapes);
 
 
             let item = document.createElement('div');
             item.className = 'etapesgriditem';
+            item.id = numID;
+            numID ++;
 
             let image = document.createElement('img');
             image.src = strapiUrl+etapes.attributes.Image.data.attributes.url;
@@ -68,8 +71,10 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
 
             let resume = document.createElement('div');
             resume.className = "etapescat";
-            resume.innerHTML = etapes.attributes.Resume;
-
+            paysages = etapes.attributes.type_paysages.data;
+            
+            console.log(paysages)
+            
             let coeur = document.createElement('a');
 
             let lecoeur = document.createElement('img');
@@ -82,7 +87,7 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
 
             let text = document.createElement('div');
             text.className ="etapesdescription";
-            text.innerHTML = etapes.attributes.Description;
+            text.innerHTML = etapes.attributes.Resume;
 
             let difficulte = document.createElement('div');
             difficulte.className = "difficulte";
@@ -94,7 +99,7 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
             } else if (difflvl == "Je me dépasse") {
                 difficulte.className += " difficile";
             } else if (difflvl == "Je débute / En famille") {
-                difficulte.className += " facile"
+                difficulte.className += " facile";
             }
 
             let distance = document.createElement('div');
@@ -128,6 +133,16 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
             smallmargin.appendChild(titre);
             smallmargin.appendChild(text);
             console.log (difflvl)
+
+
+            for (let Object of paysages) {
+                let category = document.createElement('span');
+                category.className = "category";
+                resume.appendChild(category);
+                category.innerHTML += Object.attributes.Nom;
+            }
+
+
         }
     }
 }
