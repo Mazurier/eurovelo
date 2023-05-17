@@ -41,7 +41,7 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
   document.getElementById("etapes").innerHTML = etapes;
   */
 
-  const strapiUrl = "http://90.110.218.245:5002";
+  const strapiUrl = "http://85.169.220.243:5002";
   const endPointEtapes = "/api/etapes?sort=id&populate=*";
 
   async function loadEtapes() {
@@ -88,6 +88,18 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
             difficulte.className = "difficulte";
             difficulte.innerHTML = etapes.attributes.Difficulte;
 
+            let difflvl = etapes.attributes.Difficulte;
+            if (difflvl == "J'ai l'habitude") {
+                difficulte.className += " moyen";
+            } else if (difflvl == "Je me dépasse") {
+                difficulte.className += " difficile";
+            } else if (difflvl == "Je débute / En famille") {
+                difficulte.className += " facile"
+            }
+            
+
+
+
             let distance = document.createElement('div');
             distance.className = "distanceitem";
             distance.innerHTML = etapes.attributes.Distance;
@@ -114,6 +126,7 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
             smallmargin.appendChild(difficulte);
             smallmargin.appendChild(titre);
             smallmargin.appendChild(text);
+            console.log (difflvl)
         }
     }
 }
