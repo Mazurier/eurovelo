@@ -1,4 +1,4 @@
-const strapiUrl = "http://90.110.218.245:5002";
+const strapiUrl = "http://85.169.220.243:5002";
 const endPointTemoignages ="/api/temoignages?sort=id&populate=*";
 const endPointGrid ="/api/elements-chaleur?sort=id&populate=*";
 

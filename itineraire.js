@@ -96,9 +96,6 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
             } else if (difflvl == "Je débute / En famille") {
                 difficulte.className += " facile"
             }
-            
-
-
 
             let distance = document.createElement('div');
             distance.className = "distanceitem";
@@ -115,6 +112,10 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
             let villearrivee = document.createElement('div');
             villearrivee.className ="villearriveeitem";
             villearrivee.innerHTML = etapes.attributes.VilleArrivee;
+
+            let typepaysage = document.createElement('div');
+            typepaysage.className = "typepaysageitem";
+            typepaysage.innerHTML = etapes.attributes.type_paysages;
 
             containerEtapes.appendChild(item);
             item.appendChild(image);
