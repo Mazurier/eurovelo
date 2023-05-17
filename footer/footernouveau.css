@@ -115,23 +115,25 @@ span {
 }
 
 .logovert {
-  width: 19%;
+  width: 50%;
   margin-left: 50%;
+  margin-right: 10%;
 }
 .logov {
-  font-size: 10px;
-  margin-right: -4%;
-  margin-left: 6%;
+  margin-right: -2%;
+  margin-left: 8%;
 }
 .textemarque {
-  margin-right: 10%;
-  width: 100%;
+  margin-left: 4%;
+  width: 180%;
 }
 
 .bouton_m_esp {
   background-color: white;
   border-radius: 5px;
-  margin-right: 9%;
+  margin-right: 3%;
+  margin-left: 15%;
+  margin-top: 15px;
 }
 
 .bouton_m_dav {
@@ -149,6 +151,13 @@ span {
   border: 2px solid #231f20;
   text-align: center;
 
+}
+a.bouton_m_ensavoirplus {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  margin: -300px;
+  margin-left: -150px;
 }
 
 footer .couverture-menu-footer {
@@ -213,13 +222,7 @@ footer .couverture-menu-footer .realisation {
   padding-bottom: -3000px;
   padding-top: -100px;
 
- margin-bottom:100px;
+  margin-bottom: 100px;
 }
 
 
-a.bouton_m_ensavoirplus {
-  padding-left: 50px;
-padding-top: 10px;
-margin: -300px;
-margin-left: -150px;
-}
