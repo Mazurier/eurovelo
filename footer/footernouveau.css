@@ -110,7 +110,7 @@ span {
 }
 .marquevélofooter {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-bottom: 0%;
 }
 
@@ -130,24 +130,25 @@ span {
 
 .bouton_m_esp {
   background-color: white;
-
   border-radius: 5px;
-  margin-right: 8%;
-  padding: 10px 30px;
-  width: 28%;
+  margin-right: 9%;
 }
+
 .bouton_m_dav {
   background-color: black;
   color: white;
   border-color: black;
   border-radius: 5px;
   margin-right: 15%;
-  padding: 5px 10px;
-  width: 30%;
+  width: 80%;
 }
 .bouton_m_ensavoirplus {
   color: black;
   border-color: black;
+  background: 0 0;
+  border: 2px solid #231f20;
+  text-align: center;
+
 }
 
 footer .couverture-menu-footer {
@@ -207,7 +208,18 @@ footer .couverture-menu-footer .realisation {
   margin-left: 160px;
 }
 
-.bouton_m_dav{
-  padding-left: 60px;
+.bouton_m_dav {
+  padding-left: 80px;
+  padding-bottom: -3000px;
+  padding-top: -100px;
+
+ margin-bottom:100px;
 }
-a.bouton_m_dav {padding-left: 50px;}
+
+
+a.bouton_m_ensavoirplus {
+  padding-left: 50px;
+padding-top: 10px;
+margin: -300px;
+margin-left: -150px;
+}
