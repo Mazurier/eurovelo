@@ -99,7 +99,7 @@ main {
     display: grid;
     grid-template-columns: 100%;
     position: relative;
-    gap: 2%;
+    gap: 1%;
 }
 .etapesgriditem {
     height: 10.5vw;

@@ -1,3 +1,26 @@
+
+
+
+
+
+// Actuellement inutile, mais merci de ne pas toucher au code
+//Il peux encore server de reference et/ou remplacement
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function initMap() {
   // Create the map instance
   var map = L.map('map').setView([50.72521885575759, 2.5100971952212753], 10);
@@ -35,30 +58,27 @@ function initMap() {
 
 
 
-
-
-
   gpx0.on('mouseover', function(e) {
-    changecolor(gpx0);
+    truc1();
+    
+  });
+  gpx0.on('mouseout', function() {
+    gpx0.setStyle(normalStyle);
+    map.closePopup();
+  });
+
+  function truc1() {
+    gpx0.setStyle(hoverStyle);
     var popup = L.popup()
     .setLatLng(e.latlng)
     .setContent('Calais-Ardres')
     .openOn(map);
+
     var topOffset = -popup.getElement().offsetHeight - 10;
-  });
-  gpx0.on('mouseout', function() {
-    map.closePopup();
-    changecolor(gpx0);
-  });
-
-
-  async function changecolor(name) {
-    if (name.Style == hoverStyle) {
-      name.setStyle(normalStyle);
-    } else {
-      name.setStyle(hoverStyle);
-    }
   }
+
+  
+
 
 
   gpx1.on('mouseover', function(e) {
@@ -68,6 +88,7 @@ function initMap() {
     .setContent('Ardres-Watten')
     .openOn(map);
     var topOffset = -popup.getElement().offsetHeight - 10;
+    popup.setOffset([topOffset, 0]);
   });
   gpx1.on('mouseout', function() {
     gpx1.setStyle(normalStyle);
@@ -81,6 +102,7 @@ function initMap() {
     .setContent('Watten-St-Omer')
     .openOn(map);
     var topOffset = -popup.getElement().offsetHeight - 10;
+    popup.setOffset([topOffset, 0]);
   });
   gpx2.on('mouseout', function() {
     gpx2.setStyle(normalStyle);
@@ -94,6 +116,7 @@ function initMap() {
     .setContent('St-Omer-Aire-sur-la-Lys')
     .openOn(map);
     var topOffset = -popup.getElement().offsetHeight - 10;
+    popup.setOffset([topOffset, 0]);
   });
   gpx3.on('mouseout', function() {
     gpx3.setStyle(normalStyle);
@@ -107,6 +130,7 @@ function initMap() {
     .setContent('Aire-sur-la-Lys-St-Venant')
     .openOn(map);
     var topOffset = -popup.getElement().offsetHeight - 10;
+    popup.setOffset([topOffset, 0]);
   });
   gpx4.on('mouseout', function() {
     gpx4.setStyle(normalStyle);
@@ -120,6 +144,7 @@ function initMap() {
     .setContent('St-Venant-Bethune')
     .openOn(map);
     var topOffset = -popup.getElement().offsetHeight - 10;
+    popup.setOffset([topOffset, 0]);
   });
   gpx5.on('mouseout', function() {
     gpx5.setStyle(normalStyle);
@@ -133,6 +158,7 @@ function initMap() {
     .setContent('Bethunes-Olhain')
     .openOn(map);
     var topOffset = -popup.getElement().offsetHeight - 10;
+    popup.setOffset([topOffset, 0]);
   });
   gpx6.on('mouseout', function() {
     gpx6.setStyle(normalStyle);
@@ -146,6 +172,7 @@ function initMap() {
     .setContent('Olhain-Angres')
     .openOn(map);
     var topOffset = -popup.getElement().offsetHeight - 10;
+    popup.setOffset([topOffset, 0]);
   });
   gpx7.on('mouseout', function() {
     gpx7.setStyle(normalStyle);
@@ -159,6 +186,7 @@ function initMap() {
     .setContent('Angres-Lens')
     .openOn(map);
     var topOffset = -popup.getElement().offsetHeight - 10;
+    popup.setOffset([topOffset, 0]);
   });
   gpx8.on('mouseout', function() {
     gpx8.setStyle(normalStyle);
@@ -172,6 +200,7 @@ function initMap() {
     .setContent('Lens-Don')
     .openOn(map);
     var topOffset = -popup.getElement().offsetHeight - 10;
+    popup.setOffset([topOffset, 0]);
   });
   gpx9.on('mouseout', function() {
     gpx9.setStyle(normalStyle);
@@ -185,6 +214,7 @@ function initMap() {
     .setContent('Don-Lille')
     .openOn(map);
     var topOffset = -popup.getElement().offsetHeight - 10;
+    popup.setOffset([topOffset, 0]);
   });
   gpxa.on('mouseout', function() {
     gpxa.setStyle(normalStyle);
@@ -198,6 +228,7 @@ function initMap() {
     .setContent('Lille-Wattrelos')
     .openOn(map);
     var topOffset = -popup.getElement().offsetHeight - 10;
+    popup.setOffset([topOffset, 0]);
   });
   gpxb.on('mouseout', function() {
     gpxb.setStyle(normalStyle);
