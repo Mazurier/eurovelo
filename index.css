@@ -427,6 +427,14 @@ debut partis description*/
     display: none;
 }
 
+object {
+    height: fit-content;
+    position: absolute;
+    margin-top: -50vw;
+    width: 100vw;
+    z-index: 999;
+}
+
 
 @media (max-width:600px) {
     .accueil {

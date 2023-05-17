@@ -221,6 +221,7 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
         gpx0.setStyle(hoverStyle);
         var popup = L.popup()
         .setLatLng(e.latlng)
+        .setContent('Calais-Ardres')
         .openOn(map);
         var topOffset = -popup.getElement().offsetHeight - 10;
         popup.setOffset([topOffset, 0]);
