@@ -57,12 +57,14 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
             let item = document.createElement('div');
             item.addEventListener('mouseover', function(e){
                 item.style.color = 'blue'; //Juste pour être sur que ca marche
-                var nomfonction = "hoveryes"
-                console.log(nomfonction)
-                window[nomfonction]()
+                var nomfonction = "hoveryes" + item.id;
+                console.log(nomfonction);
+                window[nomfonction]();
             });
             item.addEventListener('mouseleave', function(){
-                hoverno();
+                var nomfonction = "hoverno" + item.id;
+                console.log(nomfonction);
+                window[nomfonction]();
             })
             item.className = 'etapesgriditem';
             item.id = numID;
@@ -188,8 +190,8 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
     var gpx7 = new L.GPX('gpx/olhain-angres.gpx', { polyline_options: normalStyle }).addTo(map);
     var gpx8 = new L.GPX('gpx/angres-lens.gpx', { polyline_options: normalStyle }).addTo(map);
     var gpx9 = new L.GPX('gpx/lens-don.gpx', { polyline_options: normalStyle }).addTo(map);
-    var gpxa = new L.GPX('gpx/don-lille.gpx', { polyline_options: normalStyle }).addTo(map);
-    var gpxb = new L.GPX('gpx/lille-wattrelos.gpx', { polyline_options: normalStyle }).addTo(map);
+    var gpx10 = new L.GPX('gpx/don-lille.gpx', { polyline_options: normalStyle }).addTo(map);
+    var gpx11 = new L.GPX('gpx/lille-wattrelos.gpx', { polyline_options: normalStyle }).addTo(map);
   
     // Define the hover style
     var hoverStyle = { color: 'red', opacity: 1 };
@@ -197,6 +199,8 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
     // Add event listeners to each GPX track
   
     //C'est pas opti pour un sou mais ca marche donc heh
+
+    //Ce code est IMONDE mais il marche, ammusez vous a l'améliorer si vous avez rien a faire
    
   
   
@@ -358,8 +362,8 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
       map.closePopup();
     });
   
-    gpxa.on('mouseover', function(e) {
-      gpxa.setStyle(hoverStyle);
+    gpx10.on('mouseover', function(e) {
+      gpx10.setStyle(hoverStyle);
       var popup = L.popup()
       .setLatLng(e.latlng)
       .setContent('Don-Lille')
@@ -367,13 +371,13 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
       var topOffset = -popup.getElement().offsetHeight - 10;
       popup.setOffset([topOffset, 0]);
     });
-    gpxa.on('mouseout', function() {
-      gpxa.setStyle(normalStyle);
+    gpx10.on('mouseout', function() {
+      gpx10.setStyle(normalStyle);
       map.closePopup();
     });
   
-    gpxb.on('mouseover', function(e) {
-      gpxb.setStyle(hoverStyle);
+    gpx11.on('mouseover', function(e) {
+      gpx11.setStyle(hoverStyle);
       var popup = L.popup()
       .setLatLng(e.latlng)
       .setContent('Lille-Wattrelos')
@@ -381,18 +385,95 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
       var topOffset = -popup.getElement().offsetHeight - 10;
       popup.setOffset([topOffset, 0]);
     });
-    gpxb.on('mouseout', function() {
-      gpxb.setStyle(normalStyle);
+    gpx11.on('mouseout', function() {
+      gpx11.setStyle(normalStyle);
       map.closePopup();
     });
   
 
 
-    function hoveryes() {
+    function hoveryes0() {
         gpx0.setStyle(hoverStyle);
-    }
-    function hoverno() {
+    };
+    function hoverno0() {
         gpx0.setStyle(normalStyle);
+    };
+
+    function hoveryes1() {
+        gpx1.setStyle(hoverStyle);
+    };
+    function hoverno1() {
+        gpx1.setStyle(normalStyle);
+    };
+
+    function hoveryes2() {
+        gpx2.setStyle(hoverStyle);
+    };
+    function hoverno2() {
+        gpx2.setStyle(normalStyle);
+    };
+
+    function hoveryes3() {
+        gpx3.setStyle(hoverStyle);
+    };
+    function hoverno3() {
+        gpx3.setStyle(normalStyle);
+    };
+
+    function hoveryes4() {
+        gpx4.setStyle(hoverStyle);
+    };
+    function hoverno4() {
+        gpx4.setStyle(normalStyle);
+    };
+
+    function hoveryes5() {
+        gpx5.setStyle(hoverStyle);
+    };
+    function hoverno5() {
+        gpx5.setStyle(normalStyle);
+    };
+
+    function hoveryes6() {
+        gpx6.setStyle(hoverStyle);
+    };
+    function hoverno6() {
+        gpx6.setStyle(normalStyle);
+    };
+
+    function hoveryes7() {
+        gpx7.setStyle(hoverStyle);
+    };
+    function hoverno7() {
+        gpx7.setStyle(normalStyle);
+    };
+
+    function hoveryes8() {
+        gpx8.setStyle(hoverStyle);
+    };
+    function hoverno8() {
+        gpx8.setStyle(normalStyle);
+    };
+
+    function hoveryes9() {
+        gpx9.setStyle(hoverStyle);
+    };
+    function hoverno9() {
+        gpx9.setStyle(normalStyle);
+    };
+
+    function hoveryes10() {
+        gpx10.setStyle(hoverStyle);
+    };
+    function hoverno10() {
+        gpx10.setStyle(normalStyle);
+    };
+
+    function hoveryes11() {
+        gpx11.setStyle(hoverStyle);
+    };
+    function hoverno11() {
+        gpx11.setStyle(normalStyle);
     };
   
   // Call the initMap function to initialize the map
