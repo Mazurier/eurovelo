@@ -192,17 +192,57 @@ main {
 
 .facile {
     color: #41e92b;
+    display: flex;
+    align-items: center;
 }
 .facile::after {
-    width: 10px;
-    height: 10px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
     content: "";
-    border: 2px solid #41e92b;
+    background-color: #41e92b;
+    border: 3px solid #41e92b;
     border-radius: 100%;
+    margin-left: 2%;
 }
 .moyen {
     color: #3498DB;
+    display: flex;
+    align-items: center;
+}
+.moyen::after {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    content: "";
+    background-color: #3498DB;
+    border: 3px solid #3498DB;
+    border-radius: 100%;
+    margin-left: 2%;
 }
 .difficile {
     color: red;
+    display: flex;
+    align-items: center;
+}
+.difficile::after {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    content: "";
+    background-color: red;
+    border: 3px solid red;
+    border-radius: 100%;
+    margin-left: 2%;
+}
+.category {
+    width: fit-content;
+    margin-right: 1%;
+}
+.category:after {
+    content: ", ";
+    width: fit-content;
+}
+.category:last-child::after {
+    content: "";
 }
