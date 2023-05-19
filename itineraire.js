@@ -56,7 +56,6 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
 
             let item = document.createElement('div');
             item.addEventListener('mouseover', function(e){
-                item.style.color = 'blue'; //Juste pour être sur que ca marche
                 var nomfonction = "hoveryes" + item.id;
                 console.log(nomfonction);
                 window[nomfonction]();
@@ -71,7 +70,7 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
             numID ++;
 
             let image = document.createElement('img');
-            image.src = strapiUrl+etapes.attributes.Image.data.attributes.url;
+            image.src = strapiUrl+etapes.attributes.Image.data.attributes.formats.small.url;
             image.className = 'etapesimg';
 
             let smallmargin = document.createElement('div');

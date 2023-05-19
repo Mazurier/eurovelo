@@ -1,0 +1,210 @@
+.retour {
+    height: 4vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 0.9vw;
+    font-weight: 700;
+    line-height: 1.25vw;
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+.longdiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.leurovelo5 {
+    color: #f59c00;
+    font-size: 0.65vw;
+}
+.arrow {
+    height: 1.5vw;
+    padding: 1vw;
+}
+.head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 2% 0;
+    color: #007c74;;
+    font-size: 0.8vw;
+    font-weight: 700;
+    border-bottom: #007c74 3px solid;
+}
+.trajetcategory {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    padding: 0.45vw 0;
+    padding-left: 1vw;
+    background-color: #f59c00;
+    font-weight: 600;
+    font-size: 0.75vw;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 1vw;
+}
+.info {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5vw 0;
+}
+.info * {
+    padding: 0 0.5vw;
+}
+.trajetimgplace {
+    width: 100%;
+    height: 45%;
+    background-color: darkseagreen;
+}
+.trajetimg {
+    height: 100%;
+    width: 100%;
+}
+.kiloafter {
+    font-family: "Material Icons Outlined";
+    font-size: 1.25vw;
+    padding: 0 6px;
+}
+.info div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.temps:after {
+    content: "timer";
+    font-family: "Material Icons Outlined";
+    font-size: 1.25vw;
+    margin-left: 5px;
+}
+.departarivee {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    padding: 0.8vw 0vw;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.depart, .arivee {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.depart:before {
+    width: 9px;
+    height: 9px;
+    content: "";
+    border: 2px solid green;
+    border-radius: 100%;
+    margin: 0 0.5vw;
+}
+.arivee:after {
+    width: 9px;
+    height: 9px;
+    content: "";
+    border: 2px solid red;
+    border-radius: 100%;
+    margin: 0 0.5vw;
+}
+.doublefleche {
+    font-family: "Material Icons Outlined";
+    font-size: 1.5vw;
+}
+.endroit {
+    display: flex;
+}
+.endroit * {
+    margin-right: 0.3vw;
+}
+.titre {
+    font-size: 1vw;
+    font-weight: 700;
+    margin-top: 0.75vw;
+    text-align: center;
+}
+.texte {
+    margin-top: 3vw;
+    font-size: 1vw;
+    padding-left: 1vw;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.download {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding-right: 1vw;
+    font-family: "Material Icons";
+    color: #007c74;
+    font-size: 2vw;
+    text-decoration: none;
+}
+
+
+.facile {
+    color: #41e92b;
+    display: flex;
+    align-items: center;
+}
+.facile::after {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    content: "";
+    background-color: #41e92b;
+    border: 3px solid #41e92b;
+    border-radius: 100%;
+    margin-left: 2%;
+}
+.moyen {
+    color: #3498DB;
+    display: flex;
+    align-items: center;
+}
+.moyen::after {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    content: "";
+    background-color: #3498DB;
+    border: 3px solid #3498DB;
+    border-radius: 100%;
+    margin-left: 2%;
+}
+.difficile {
+    color: red;
+    display: flex;
+    align-items: center;
+}
+.difficile::after {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    content: "";
+    background-color: red;
+    border: 3px solid red;
+    border-radius: 100%;
+    margin-left: 2%;
+}
+.difficulte {
+    padding: 0%;
+    width: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
