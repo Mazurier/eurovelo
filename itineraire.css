@@ -158,6 +158,7 @@ main {
     width: 26.75vw;
     display: flex;
     align-items: center;
+    color: white;
     padding-left: 1vw;
     background-color: #f59c00;
 }
@@ -185,7 +186,7 @@ main {
 
 
 .mapplace {
-    background-color: red;
+    background-color: aquamarine;
     width: 60vw;
     height: calc(100vh - 6.75vw);
 }
