@@ -61,12 +61,12 @@ return `
                 <a href="">INSPIRATIONS</a>
             </div>
             <div class="headerlink">
-                <a href="" id="headeractu">ACTUALITÉS</a>
-                <img src="img/phylactère.png" alt="actualités">
+                <a href="" id="headeractu">ACTUALITÉS \ud83d\udcac</a>
             </div>
             <div class="headerlink">
                 <a href="" id="headerpassport">PASSEPORT</a>
-                <img src="img/map.png" alt="passeport">
+                <span class="material-symbols-outlined">map</span>
+                
             </div>
         </div>
     </div>

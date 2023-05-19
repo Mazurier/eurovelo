@@ -257,3 +257,12 @@ header {
         display: flex;
     }
 }
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 4;
+  color: #007c74;
+}
