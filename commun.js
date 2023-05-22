@@ -64,15 +64,13 @@ return `
                 <a href="" id="headeractu">ACTUALITÉS \ud83d\udcac</a>
             </div>
             <div class="headerlink">
-                <a href="" id="headerpassport">PASSEPORT</a>
-                <span class="material-symbols-outlined">map</span>
-                
+                <a href="" id="headerpassport">PASSEPORT</a> <span class="material-symbols-outlined">map</span>
             </div>
         </div>
     </div>
     <div class="headerdroite">
         <a href="">
-            <img src="img/search.png" alt="" class="headersearchicon">
+          <img src="img/search.png" alt="" class="headersearchicon">
         </a>
     </div>
 </div>
