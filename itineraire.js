@@ -1,3 +1,4 @@
+
 /*
 function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
 
@@ -41,6 +42,7 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
   document.getElementById("etapes").innerHTML = etapes;
   */
 
+
   const strapiUrl = "http://85.169.220.243:5002";
   const endPointEtapes = "/api/etapes?sort=id&populate=*";
 
@@ -49,12 +51,13 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
     let response = await fetch(strapiUrl + endPointEtapes);
     if (response.ok) {
         let json = await response.json();
-        numID = 0;
+        let numID = 0;
         for (let etapes of json.data) {
             console.log(etapes);
 
 
             let item = document.createElement('div');
+            item.id = numID;
             item.addEventListener('mouseover', function(e){
                 var nomfonction = "hoveryes" + item.id;
                 console.log(nomfonction);
@@ -65,8 +68,14 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
                 console.log(nomfonction);
                 window[nomfonction]();
             })
+
+            item.addEventListener('click', function(){
+              let fetchid = Number(item.id) + 1;
+              choixarticle(fetchid);
+            })
+
+
             item.className = 'etapesgriditem';
-            item.id = numID;
             numID ++;
 
             let image = document.createElement('img');
@@ -152,10 +161,25 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
                 category.innerHTML += Object.attributes.Nom;
             }
 
-
+            function choixarticle(fetchid) {
+              let integrcontain = document.getElementById('integrcontain');
+              let mainhead = document.getElementById('mainhead');
+              let planif = document.getElementById('planif');
+              let integration = document.createElement('object');
+              integration.setAttribute('type', 'text/html');
+              integration.setAttribute('data', `trajet.html?id=${fetchid}`);
+              integrcontain.removeChild(mainhead);
+              integrcontain.removeChild(planif);
+              integrcontain.appendChild(integration);
+            }
         }
     }
 }
+
+
+
+
+
 
 
 
