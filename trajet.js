@@ -105,8 +105,8 @@ if (response.ok) {
 
         let download = document.createElement('a');
         download.className = 'download';
-        download.setAttribute('href', 'gpx/gpx1.gpx');
-        download.setAttribute('download', 'gpx1.gpx');
+        download.setAttribute('href', strapiUrl+etapes.attributes.GPX.data.attributes.url);
+        //download.setAttribute('download', 'gpx1.gpx');
         download.innerHTML = 'download';
 
 
