@@ -261,3 +261,81 @@ main {
     height: 1vw;
     padding: 0.25vw;
 }
+
+
+@media (max-width:600px) {
+    main {
+        flex-direction: column;
+        margin-top: 24vw;
+        width: 100%;
+    }
+    .navigation {
+        width: fit-content;
+    }
+    #map {
+        width: 100%;
+    }
+    .mainhead {
+        height: fit-content;
+        font-size: 10vw;
+    }
+    .etapesicon {
+        width: 14vw;
+    }
+    .planif {
+        height: 43vw;
+    }
+    .planifform {
+        font-size: 8vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .planifform * {
+        font-size: 4vw;
+        width: 98%;
+        height: 7vw;
+        margin-bottom: 2vw;
+    }
+    .planifform button {
+        height: 10vw;
+    }
+    .download a {
+        font-size: 3vw;
+    }
+    .etapesgriditem {
+        margin-bottom: 3vw;
+        height: fit-content;
+    }
+    .etapesbandeau {
+        font-size: 3vw;
+        height: 15vw;
+        width: 54vw;
+        margin-left: 0.5vw;
+        justify-content: space-around;
+    }
+    .etapescat {
+        width: 100%;
+    }
+    .etapesfavoris {
+        display: none;
+    }
+    .etapesimg {
+        width: 45vw;
+        height: 35vw;
+    }
+    .category {
+        width: max-content;
+        margin-right: 5%;
+        height: 10vw;
+        height: min-content;
+    }
+    .category:after {
+        display: none;
+    }
+    .difficulte {
+        font-size: 3vw;
+    }
+    .etapestrajet {
+        font-size: 4vw;
+    }
+}
