@@ -253,3 +253,48 @@ main {
 .suivant:hover, .precedant:hover {
     cursor: pointer;
 }
+
+@media (max-width:600px) {
+    main {
+        width: 100vw;
+    }
+    .retour {
+        margin-left: 5vw;
+        height: fit-content;
+        padding: 2vw 0;
+        font-size: 3.5vw;
+        line-height: 4vw;
+        width: calc(100% - 5vw);
+    }
+    .leurovelo5 {
+        font-size: 3vw;
+    }
+    .download {
+        font-size: 8vw;
+    }
+    .head {
+        font-size: 3vw;
+    }
+    .trajetcategory {
+        font-size:4vw;
+    }
+    .kilo:after {
+        font-size: 5vw;
+    }
+    .temps:after {
+        font-size: 4vw;
+    }
+    .titre {
+    font-size: 5vw;
+    padding: 0 2vw;        
+    }
+    .texte {
+        font-size: 3vw;
+    }
+    .innerfooter {
+        height: fit-content;
+        padding: 2vw 0;
+        font-size: 4vw;
+        padding: 0 2vw;
+    }
+}
