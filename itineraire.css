@@ -1,3 +1,7 @@
+object {
+    height: 100%;
+    width: 100%;
+}
 body, html {
     background: aqua;
     margin: 0%;
