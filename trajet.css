@@ -28,6 +28,7 @@ main {
 .arrow {
     height: 2.5vw;
     padding: 1vw;
+    visibility: hidden;
 }
 .head {
     width: 100%;
@@ -66,7 +67,6 @@ main {
     padding: 0.5vw 0;
 }
 .info * {
-    padding: 0 0.5vw;
     width: 30vw;
 }
 .trajetimgplace {
@@ -102,11 +102,12 @@ main {
     align-items: center;
     justify-content: space-between;
     background-color: #ececec;
-    padding: 0.8vw 0vw;
+    padding: 0.1vw 0vw;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     height: 10vw;
+    font-size: 3vw;
 }
 .depart, .arivee {
     display: flex;
@@ -247,4 +248,8 @@ main {
 .suivant::after {
     font-family: "Material Icons Outlined";
     content: "arrow_forward";
+}
+
+.suivant:hover, .precedant:hover {
+    cursor: pointer;
 }
