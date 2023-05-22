@@ -22,11 +22,15 @@ if (response.ok) {
     let etapes = json.data.find(etapes => etapes.id === Number(id));
     if (etapes) {
         console.log(etapes);
+        gpxnum = id - 1;
+        let newid = id;
+        parent.postMessage(newid);
+        
 
         let retour = document.createElement('div');
         retour.className = 'retour';
 
-        let lienretour = document.createElement('a');
+        let lienretour = document.createElement('div');
         lienretour.setAttribute('href', 'itineraire.html');
 
         let imageretour = document.createElement('img');
@@ -67,18 +71,18 @@ if (response.ok) {
 
         let kilo = document.createElement('div');
         kilo.className = 'kilo';
-        kilo.innerHTML = etapes.attributes.Distance;
+        kilo.innerHTML = `${etapes.attributes.Distance} Km` ;
 
         let temps = document.createElement('div');
         temps.className = 'temps';
-        temps.innerHTML = etapes.attributes.Minutes;
+        temps.innerHTML = `${etapes.attributes.Minutes} Minutes`;
 
         let illus = document.createElement('div');
         illus.className = 'trajetimgplace';
 
         let trajetimg = document.createElement('img');
         trajetimg.className = 'trajetimg';
-        trajetimg.src = strapiUrl+etapes.attributes.Image.data.attributes.formats.small.url;
+        trajetimg.src = strapiUrl+etapes.attributes.Image.data.attributes.formats.medium.url;
 
         let deparive = document.createElement('div');
         deparive.className = 'departarivee';
@@ -105,8 +109,8 @@ if (response.ok) {
 
         let download = document.createElement('a');
         download.className = 'download';
-        download.setAttribute('href', 'gpx/gpx1.gpx');
-        download.setAttribute('download', 'gpx1.gpx');
+        download.setAttribute('href', strapiUrl+etapes.attributes.GPX.data.attributes.url);
+        //download.setAttribute('download', 'gpx1.gpx');
         download.innerHTML = 'download';
 
 
@@ -130,8 +134,10 @@ if (response.ok) {
         precedant.className = "precedant";
         precedant.innerHTML="Precedant"; 
         precedant.addEventListener('click', function(){
-            id = id - 1;
+            id--;
             console.log(id)
+            let newid = id;
+            parent.postMessage(newid);
             window.location.href = window.location.origin + window.location.pathname + '?id=' + id;
         })
 
@@ -144,6 +150,8 @@ if (response.ok) {
         suivant.addEventListener('click', function(){
             id++;
             console.log(id)
+            let newid = id;
+            parent.postMessage(newid);
             window.location.href = window.location.origin + window.location.pathname + '?id=' + id;
         })
 

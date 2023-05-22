@@ -72,6 +72,9 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
             item.addEventListener('click', function(){
               let fetchid = Number(item.id) + 1;
               choixarticle(fetchid);
+              var nomfonction = "hoverno" + item.id;
+              console.log(nomfonction);
+              window[nomfonction]();
             })
 
 
@@ -141,6 +144,8 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
             typepaysage.className = "typepaysageitem";
             typepaysage.innerHTML = etapes.attributes.type_paysages;
 
+            
+
             containerEtapes.appendChild(item);
             item.appendChild(image);
             item.appendChild(smallmargin);
@@ -159,18 +164,6 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
                 category.className = "category";
                 resume.appendChild(category);
                 category.innerHTML += Object.attributes.Nom;
-            }
-
-            function choixarticle(fetchid) {
-              let integrcontain = document.getElementById('integrcontain');
-              let mainhead = document.getElementById('mainhead');
-              let planif = document.getElementById('planif');
-              let integration = document.createElement('object');
-              integration.setAttribute('type', 'text/html');
-              integration.setAttribute('data', `trajet.html?id=${fetchid}`);
-              integrcontain.removeChild(mainhead);
-              integrcontain.removeChild(planif);
-              integrcontain.appendChild(integration);
             }
         }
     }
@@ -236,6 +229,9 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
         console.log('tetete')
       truc2();
     });
+    gpx0.on('click', function(){
+      choixarticle(1);
+    })
   
 
 
@@ -247,7 +243,7 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
         .setContent('Calais-Ardres')
         .openOn(map);
         var topOffset = -popup.getElement().offsetHeight - 10;
-        popup.setOffset([topOffset, 0]);
+
     }
     function truc2() {
         gpx0.setStyle(normalStyle);
@@ -267,12 +263,14 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
       .setContent('Ardres-Watten')
       .openOn(map);
       var topOffset = -popup.getElement().offsetHeight - 10;
-      popup.setOffset([topOffset, 0]);
     });
     gpx1.on('mouseout', function() {
       gpx1.setStyle(normalStyle);
       map.closePopup();
     });
+    gpx1.on('click', function(){
+      choixarticle(2);
+    })
   
     gpx2.on('mouseover', function(e) {
       gpx2.setStyle(hoverStyle);
@@ -281,12 +279,14 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
       .setContent('Watten-St-Omer')
       .openOn(map);
       var topOffset = -popup.getElement().offsetHeight - 10;
-      popup.setOffset([topOffset, 0]);
     });
     gpx2.on('mouseout', function() {
       gpx2.setStyle(normalStyle);
       map.closePopup();
     });
+    gpx2.on('click', function(){
+      choixarticle(3);
+    })
   
     gpx3.on('mouseover', function(e) {
       gpx3.setStyle(hoverStyle);
@@ -295,12 +295,14 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
       .setContent('St-Omer-Aire-sur-la-Lys')
       .openOn(map);
       var topOffset = -popup.getElement().offsetHeight - 10;
-      popup.setOffset([topOffset, 0]);
     });
     gpx3.on('mouseout', function() {
       gpx3.setStyle(normalStyle);
       map.closePopup();
     });
+    gpx3.on('click', function(){
+      choixarticle(4);
+    })
     
     gpx4.on('mouseover', function(e) {
       gpx4.setStyle(hoverStyle);
@@ -309,12 +311,14 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
       .setContent('Aire-sur-la-Lys-St-Venant')
       .openOn(map);
       var topOffset = -popup.getElement().offsetHeight - 10;
-      popup.setOffset([topOffset, 0]);
     });
     gpx4.on('mouseout', function() {
       gpx4.setStyle(normalStyle);
       map.closePopup();
     });
+    gpx4.on('click', function(){
+      choixarticle(5);
+    })
   
     gpx5.on('mouseover', function(e) {
       gpx5.setStyle(hoverStyle);
@@ -323,12 +327,14 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
       .setContent('St-Venant-Bethune')
       .openOn(map);
       var topOffset = -popup.getElement().offsetHeight - 10;
-      popup.setOffset([topOffset, 0]);
     });
     gpx5.on('mouseout', function() {
       gpx5.setStyle(normalStyle);
       map.closePopup();
     });
+    gpx5.on('click', function(){
+      choixarticle(6);
+    })
     
     gpx6.on('mouseover', function(e) {
       gpx6.setStyle(hoverStyle);
@@ -337,12 +343,14 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
       .setContent('Bethunes-Olhain')
       .openOn(map);
       var topOffset = -popup.getElement().offsetHeight - 10;
-      popup.setOffset([topOffset, 0]);
     });
     gpx6.on('mouseout', function() {
       gpx6.setStyle(normalStyle);
       map.closePopup();
     });
+    gpx6.on('click', function(){
+      choixarticle(7);
+    })
   
     gpx7.on('mouseover', function(e) {
       gpx7.setStyle(hoverStyle);
@@ -351,12 +359,14 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
       .setContent('Olhain-Angres')
       .openOn(map);
       var topOffset = -popup.getElement().offsetHeight - 10;
-      popup.setOffset([topOffset, 0]);
     });
     gpx7.on('mouseout', function() {
       gpx7.setStyle(normalStyle);
       map.closePopup();
     });
+    gpx7.on('click', function(){
+      choixarticle(8);
+    })
   
     gpx8.on('mouseover', function(e) {
       gpx8.setStyle(hoverStyle);
@@ -365,12 +375,14 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
       .setContent('Angres-Lens')
       .openOn(map);
       var topOffset = -popup.getElement().offsetHeight - 10;
-      popup.setOffset([topOffset, 0]);
     });
     gpx8.on('mouseout', function() {
       gpx8.setStyle(normalStyle);
       map.closePopup();
     });
+    gpx8.on('click', function(){
+      choixarticle(9);
+    })
   
     gpx9.on('mouseover', function(e) {
       gpx9.setStyle(hoverStyle);
@@ -379,12 +391,14 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
       .setContent('Lens-Don')
       .openOn(map);
       var topOffset = -popup.getElement().offsetHeight - 10;
-      popup.setOffset([topOffset, 0]);
     });
     gpx9.on('mouseout', function() {
       gpx9.setStyle(normalStyle);
       map.closePopup();
     });
+    gpx9.on('click', function(){
+      choixarticle(10);
+    })
   
     gpx10.on('mouseover', function(e) {
       gpx10.setStyle(hoverStyle);
@@ -393,12 +407,14 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
       .setContent('Don-Lille')
       .openOn(map);
       var topOffset = -popup.getElement().offsetHeight - 10;
-      popup.setOffset([topOffset, 0]);
     });
     gpx10.on('mouseout', function() {
       gpx10.setStyle(normalStyle);
       map.closePopup();
     });
+    gpx10.on('click', function(){
+      choixarticle(11);
+    })
   
     gpx11.on('mouseover', function(e) {
       gpx11.setStyle(hoverStyle);
@@ -407,12 +423,14 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
       .setContent('Lille-Wattrelos')
       .openOn(map);
       var topOffset = -popup.getElement().offsetHeight - 10;
-      popup.setOffset([topOffset, 0]);
     });
     gpx11.on('mouseout', function() {
       gpx11.setStyle(normalStyle);
       map.closePopup();
     });
+    gpx11.on('click', function(){
+      choixarticle(12);
+    })
   
 
 
@@ -503,3 +521,47 @@ function etapestxt(kilo, img, cat, dep, ariv, diffi, text) {
   // Call the initMap function to initialize the map
 loadEtapes();
   
+
+
+function choixarticle(fetchid) { //Oh le bricollage de la fleche c'est un scandale
+  let retourarrow = document.createElement('a');
+  retourarrow.className = "retourarrow";
+  retourarrow.setAttribute('href', 'itineraire.html');
+  let imageretour = document.createElement('img');
+  imageretour.setAttribute('src','img/arrow.png');
+  imageretour.className = 'arrow';
+  let integrcontain = document.getElementById('integrcontain');
+  let mainhead = document.getElementById('mainhead');
+  let planif = document.getElementById('planif');
+  let integration = document.createElement('object');
+  integration.setAttribute('type', 'text/html');
+  integration.setAttribute('data', `trajet.html?id=${fetchid}`);
+  integrcontain.removeChild(mainhead);
+  integrcontain.removeChild(planif);
+  integrcontain.appendChild(integration);
+  integrcontain.appendChild(retourarrow);
+  retourarrow.appendChild(imageretour);
+}
+
+
+window.addEventListener('message', function(event) {
+    var dataFromPage1 = event.data;
+    console.log('gpx num:', dataFromPage1);
+    dataFromPage1 --;
+    newid = "gpx" + dataFromPage1;
+    console.log(newid);
+    var changecolour = window[newid];
+    changecolor();
+    returncolor();
+    function changecolor() {
+      changecolour.setStyle(hoverStyle);
+    };
+    function returncolor() {
+      newid = "gpx" + Number(dataFromPage1 + 1)
+      var changecolour1 = window[newid];
+      changecolour1.setStyle(normalStyle);
+      newid = "gpx" + Number(dataFromPage1 - 1)
+      var changecolour2 = window[newid];
+      changecolour2.setStyle(normalStyle);
+    }
+})

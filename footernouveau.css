@@ -150,6 +150,7 @@ li a {
 
 span {
   font-weight: bold;
+  font-family: 'Reem Kufi Fun', sans-serif;
 }
 .marquevélofooter {
   display: flex;
@@ -176,6 +177,8 @@ span {
 
 .pmarquevélo {
   margin-right: 10%;
+  font-family: 'Wix Madefor Display', sans-serif;
+color: #4a4747;
 }
 
 .bouton_m_dav {
@@ -268,4 +271,13 @@ footer .couverture-menu-footer .realisation {
 }
 .prs {
   margin-left: 90px;
+}
+
+.QSNText{
+  font-family: 'Wix Madefor Display', sans-serif;
+
+}
+.QSNTitre{
+  font-family: 'Urbanist', sans-serif;
+
 }
