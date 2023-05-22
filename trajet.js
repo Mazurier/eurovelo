@@ -1,13 +1,26 @@
+
+
 const strapiUrl = "http://85.169.220.243:5002";
 const endPointEtapes = "/api/etapes?sort=id&populate=*";
+
+const scriptURL = window.location.href;
+const url = new URL(scriptURL);
+let id = url.searchParams.get('id');
+console.log("desfes", id);
+if (id < 1) {
+    id = 1;
+};
+if (id > 12) {
+    id = 12;
+} 
 
 async function trajet() {
 let containertrajet = document.getElementById('trajet')
 let response = await fetch(strapiUrl + endPointEtapes);
 if (response.ok) {
     let json = await response.json();
-    numID = 0;
-    for (let etapes of json.data) {
+    let etapes = json.data.find(etapes => etapes.id === Number(id));
+    if (etapes) {
         console.log(etapes);
 
         let retour = document.createElement('div');
@@ -56,10 +69,6 @@ if (response.ok) {
         kilo.className = 'kilo';
         kilo.innerHTML = etapes.attributes.Distance;
 
-        let kiloafter = document.createElement('span');
-        kiloafter.className = 'kiloafter';
-        kiloafter.innerHTML = 'settings_ethernet';
-
         let temps = document.createElement('div');
         temps.className = 'temps';
         temps.innerHTML = etapes.attributes.Minutes;
@@ -69,7 +78,7 @@ if (response.ok) {
 
         let trajetimg = document.createElement('img');
         trajetimg.className = 'trajetimg';
-        trajetimg.src = strapiUrl+etapes.attributes.Image.data.attributes.formats.medium.url;
+        trajetimg.src = strapiUrl+etapes.attributes.Image.data.attributes.formats.small.url;
 
         let deparive = document.createElement('div');
         deparive.className = 'departarivee';
@@ -114,6 +123,32 @@ if (response.ok) {
             difficulte.className += " facile";
         }
 
+        let innerfooter = document.createElement('div');
+        innerfooter.className = "innerfooter";
+
+        let precedant = document.createElement('div');
+        precedant.className = "precedant";
+        precedant.innerHTML="Precedant"; 
+        precedant.addEventListener('click', function(){
+            id = id - 1;
+            console.log(id)
+            window.location.href = window.location.origin + window.location.pathname + '?id=' + id;
+        })
+
+        let current = document.createElement('div');
+        current.innerHTML = `${id}/12`;
+
+        let suivant = document.createElement('div');
+        suivant.className = 'suivant';
+        suivant.innerHTML = "Suivant";
+        suivant.addEventListener('click', function(){
+            id++;
+            console.log(id)
+            window.location.href = window.location.origin + window.location.pathname + '?id=' + id;
+        })
+
+
+
 
 
         containertrajet.appendChild(retour);
@@ -131,7 +166,6 @@ if (response.ok) {
         containertrajet.appendChild(trajetcat);
         containertrajet.appendChild(info);
         info.appendChild(kilo);
-        kilo.appendChild(kiloafter);
         info.appendChild(temps);
         info.appendChild(difficulte);
         containertrajet.appendChild(illus);
@@ -142,6 +176,10 @@ if (response.ok) {
         deparive.appendChild(arivee);
         containertrajet.appendChild(titre);
         containertrajet.appendChild(texte);
+        containertrajet.appendChild(innerfooter);
+        innerfooter.appendChild(precedant);
+        innerfooter.appendChild(current);
+        innerfooter.appendChild(suivant);
 
 
         }

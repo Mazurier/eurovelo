@@ -1,11 +1,19 @@
+main {
+    margin-top: 0;
+    height: 100%;
+}
+.navigation {
+    width: 100%;
+    height: 100%;
+}
 .retour {
-    height: 4vw;
+    height: 7vw;
     width: 100%;
     display: flex;
     align-items: center;
-    font-size: 0.9vw;
+    font-size: 1.9vw;
     font-weight: 700;
-    line-height: 1.25vw;
+    line-height: 2.25vw;
     border-bottom: 1px solid rgb(206, 206, 206);
 }
 .longdiv {
@@ -15,10 +23,10 @@
 }
 .leurovelo5 {
     color: #f59c00;
-    font-size: 0.65vw;
+    font-size: 1.65vw;
 }
 .arrow {
-    height: 1.5vw;
+    height: 2.5vw;
     padding: 1vw;
 }
 .head {
@@ -29,7 +37,7 @@
     justify-content: center;
     padding: 2% 0;
     color: #007c74;;
-    font-size: 0.8vw;
+    font-size: 2vw;
     font-weight: 700;
     border-bottom: #007c74 3px solid;
 }
@@ -44,22 +52,22 @@
     padding-left: 1vw;
     background-color: #f59c00;
     font-weight: 600;
-    font-size: 0.75vw;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-size: 1vw;
+    font-size: 2vw;
 }
 .info {
     width: 100%;
     height: 5%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 0.5vw 0;
 }
 .info * {
     padding: 0 0.5vw;
+    width: 30vw;
 }
 .trajetimgplace {
     width: 100%;
@@ -70,9 +78,10 @@
     height: 100%;
     width: 100%;
 }
-.kiloafter {
+.kilo:after {
+    content: "settings_ethernet";
     font-family: "Material Icons Outlined";
-    font-size: 1.25vw;
+    font-size: 2.25vw;
     padding: 0 6px;
 }
 .info div {
@@ -84,7 +93,7 @@
 .temps:after {
     content: "timer";
     font-family: "Material Icons Outlined";
-    font-size: 1.25vw;
+    font-size: 2.25vw;
     margin-left: 5px;
 }
 .departarivee {
@@ -92,16 +101,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f8f8f8;
+    background-color: #ececec;
     padding: 0.8vw 0vw;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    height: 10vw;
 }
 .depart, .arivee {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 1vw;
 }
 .depart:before {
     width: 9px;
@@ -121,24 +132,26 @@
 }
 .doublefleche {
     font-family: "Material Icons Outlined";
-    font-size: 1.5vw;
+    font-size: 5vw;
 }
 .endroit {
     display: flex;
+    width: 50vw;
 }
 .endroit * {
     margin-right: 0.3vw;
 }
 .titre {
-    font-size: 1vw;
+    font-size: 3vw;
     font-weight: 700;
     margin-top: 0.75vw;
     text-align: center;
 }
 .texte {
     margin-top: 3vw;
-    font-size: 1vw;
-    padding-left: 1vw;
+    font-size: 2vw;
+    padding-left: 2vw;
+    padding-right: 6vw;
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -151,7 +164,7 @@
     padding-right: 1vw;
     font-family: "Material Icons";
     color: #007c74;
-    font-size: 2vw;
+    font-size: 3vw;
     text-decoration: none;
 }
 
@@ -175,6 +188,7 @@
     color: #3498DB;
     display: flex;
     align-items: center;
+    width: fit-content;
 }
 .moyen::after {
     display: inline-block;
@@ -203,8 +217,34 @@
 }
 .difficulte {
     padding: 0%;
-    width: 5vw;
+    font-size: 2vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 20vw;
+}
+
+.innerfooter {
+    width: 100%;
+    margin-top: 2vw;
+    height: 6vw;
+    background-color: #007c74;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2vw;
+    color: white;
+    padding: 0 5vw;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.precedant::before {
+    font-family: "Material Icons Outlined";
+    content: "arrow_back";
+}
+
+.suivant::after {
+    font-family: "Material Icons Outlined";
+    content: "arrow_forward";
 }
