@@ -9,51 +9,87 @@
   font-family: "Frutiger";
   src: url("font/Frutiger.woff") format("woff");
 }
+
+.hautfooter {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.hautfooter .logo {
+  display: inline-block;
+}
+
+.réseauxsociaux {
+  position: absolute;
+  right: 0;
+  top: 17px;
+}
+
+.réseauxsociaux {
+  display: flex;
+  justify-content: space-between;
+  flex: 0.07;
+  margin: 0 8% 0 0;
+}
+
 .logogauche {
-  height: 80px;
-  margin: 0 0 0 100%;
+  height: 12vh;
 }
 .instagram,
 .facebook {
-  height: 20px;
+  height: 4vh;
+}
+.youtubefooter {
+  height: 4vh;
 }
 .hautfooter {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.réseauxsociaux {
-  display: flex;
-  justify-content: space-around;
-  flex: 0.07;
-  margin: 0 12% 0 0;
-}
 
 .qsnfooter {
   width: 40%;
-  margin: 0 0 0 13%;
+  margin: 0 0 0 3%;
 }
 
 a {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
-  font-size: 13px;
+  font-size: 80%;
 }
+p {
+  margin-right: -13%;
+}
+
 .bouton_esp {
   background-color: white;
   margin-right: 1%;
-  margin-left: 1%;
+  margin-left: 13%;
   border: none;
-  padding: 0.8% 2.3%;
-  border-radius: 5px;
+  padding: 0.8% 2.4%;
+  border-radius: 6%;
   color: green;
+  text-transform: uppercase;
+  border-radius: 5%;
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
+
 .bouton_nouscontacter {
   background-color: #007c74;
   padding: 0.8% 4.5%;
-  margin-left: 1%;
-  border-radius: 5px;
+  margin-left: 7%;
+  border-radius: 5%;
   color: white;
+  text-transform: uppercase;
+  border-radius: 5%;
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 .sp {
   color: green;
@@ -65,9 +101,11 @@ a {
   display: flex;
   align-items: center;
 }
+
 .hauthautfooter {
   background-image: url(/footer/qui-sommes-nous.jpg);
-  padding: 40px;
+  background-size: cover;
+  padding: 5%;
 }
 
 ul {
@@ -80,22 +118,27 @@ ul {
 .vo,
 .c,
 .sggp {
-  font-size: 16px;
+  font-size: 100%;
 }
 
 .menufooter {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .menucolonne1 {
-  margin-left: 11%;
+  margin-left: 4.5%;
 }
+
+.menucolonne2 {
+  margin-left: 4%;
+}
+
 .menucolonne3 {
-  margin-right: 10%;
-  margin-left: 0;
+  margin-right: 3%;
+  margin-left: 10%;
 }
 .fleche {
-  margin-right: 13%;
+  margin-right: 6%;
   margin-top: 1%;
 }
 .fleche2 {
@@ -111,7 +154,10 @@ span {
 .marquevélofooter {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 0%;
+  padding-bottom: 1%;
+  padding-top: 3%;
+  margin-left: -4%;
+  background-color: #f4f4f4;
 }
 
 .logovert {
@@ -128,47 +174,54 @@ span {
   width: 180%;
 }
 
-.bouton_m_esp {
-  background-color: white;
-  border-radius: 5px;
-  margin-right: 3%;
-  margin-left: 15%;
-  margin-top: 15px;
+.pmarquevélo {
+  margin-right: 10%;
 }
 
 .bouton_m_dav {
-  background-color: black;
-  color: white;
-  border-color: black;
-  border-radius: 5px;
-  margin-right: 15%;
+  background-color: #231f20;
+  border-color: #231f20;
+  border-radius: 5%;
+  margin-right: 6%;
   width: 80%;
+  margin-bottom: 7.81%;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
+.bouton_m_deveniraccueilvélo {
+  color: white;
+}
+
+.bouton_m_esp {
+  background-color: white;
+  border-color: #231f20;
+  border-radius: 5%;
+  border-color: black;
+  border: solid;
+  margin-right: 3%;
+  width: 80%;
+  margin-bottom: 7.81%;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
 .bouton_m_ensavoirplus {
   color: black;
-  border-color: black;
-  background: 0 0;
-  border: 2px solid #231f20;
-  text-align: center;
-
-}
-a.bouton_m_ensavoirplus {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  margin: -300px;
-  margin-left: -150px;
 }
 
 footer .couverture-menu-footer {
   position: relative;
   background: #231f20;
-  padding-bottom: 10px;
+  padding-bottom: 0.78%;
 }
 
 footer .couverture-menu-footer nav {
-  height: 60px;
-  line-height: 60px;
+  height: 300%;
+  line-height: 300%;
 }
 
 footer .couverture-menu-footer nav ul {
@@ -178,9 +231,9 @@ footer .couverture-menu-footer nav ul {
 
 footer .couverture-menu-footer nav ul li {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 10%;
   margin: 0;
-  margin-right: 0px;
+  margin-right: 0%;
   padding: 0;
   list-style: none;
   color: #fff;
@@ -195,7 +248,7 @@ footer .couverture-menu-footer nav ul li {
 footer .couverture-menu-footer .realisation {
   position: absolute;
   top: 50%;
-  right: 15px;
+  right: 1.5%;
   transform: translate(0, -50%);
 }
 #bloc-pieddepagegauche {
@@ -208,21 +261,11 @@ footer .couverture-menu-footer .realisation {
 
 .simplon,
 .frvelotourisme {
-  width: 70px;
+  width: 5.46vw;
 }
 .frvelotourisme {
-  margin-right: 10px;
+  margin-right: -1%;
 }
 .prs {
-  margin-left: 160px;
+  margin-left: 90px;
 }
-
-.bouton_m_dav {
-  padding-left: 80px;
-  padding-bottom: -3000px;
-  padding-top: -100px;
-
-  margin-bottom: 100px;
-}
-
-
