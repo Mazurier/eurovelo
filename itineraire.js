@@ -534,10 +534,14 @@ function choixarticle(fetchid) { //Oh le bricollage de la fleche c'est un scanda
   let mainhead = document.getElementById('mainhead');
   let planif = document.getElementById('planif');
   let integration = document.createElement('object');
+  let download = document.getElementById('download');
+  let etapes = document.getElementById('etapes');
   integration.setAttribute('type', 'text/html');
   integration.setAttribute('data', `trajet.html?id=${fetchid}`);
   integrcontain.removeChild(mainhead);
   integrcontain.removeChild(planif);
+  integrcontain.removeChild(download);
+  integrcontain.removeChild(etapes);
   integrcontain.appendChild(integration);
   integrcontain.appendChild(retourarrow);
   retourarrow.appendChild(imageretour);
