@@ -2,7 +2,7 @@
 
 ## Cadre de l'exercice
 
-Le site Vel'Hauts-de-France a été réalisé comme exercice final dans le cadre de la formation de développeur.euse intégrateur.trice web dispensée par Simplon-Lens.
+Le site Vel'Hauts-de-France a été réalisé comme exercice final dans le cadre de la formation de développeur intégrateur web dispensée par Simplon-Lens.
 Il a été réalisé dans le cadre d'un projet de groupe.
 
 ## Contributeurs
@@ -49,6 +49,13 @@ idéalement saisi par formulaire.
 Le format de chaque élément est bien défini et les éléments sont au nombre de 9, ce qui rend déjà en soi l'utilisation de Strapi pertinente.
 De plus, dans la même logique pour pour les étapes de l'itinéraire, nous pouvons imaginer la possibilité que le client demande une modification de ces éléments.
 
+### Leaftlet-GPX
+Leaflet-JS est une bibliothèque permettant d'ajouter des cartes en JavaScript. 
+Leaflet-GPX est une bibliothèque supplémentaire qui permet d'ajouter des fichiers GPX à une carte. 
+Cela a permis d'ajouter une carte incluant des fichiers GPX, ainsi que d'établir des liens entre ces fichiers et des "articles"-trajet. 
+Les articles-trajet sont situés dans une partie de navigation à gauche de la carte.
+
+
 ## Langages utilisés
 
 Les langages utilisés dans le site sont les suivants :
@@ -77,5 +84,6 @@ Le CSS est utilisé pour appliquer les styles sur l'ensemble des éléments du s
 
 ## Carte
 
-La carte a été Installée dans la racine leaflet JS et importée en GPX.
-Le lien a été fait entre les étapes et la carte par JS.
+La carte a été Installée dans la racine leaflet JS.
+Des fichiers GPX on été inclus dans la carte.
+Le lien a été fait entre les étapes et les fichier GPX via JS.
