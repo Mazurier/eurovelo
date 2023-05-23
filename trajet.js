@@ -105,7 +105,10 @@ if (response.ok) {
 
         let texte = document.createElement('div');
         texte.className = 'texte';
-        texte.innerHTML = etapes.attributes.Description;
+        let converter = new showdown.Converter();
+        let contenuDeStrapi = etapes.attributes.Description;
+        let contenuDeStrapiConvertiEnHTML = converter.makeHtml(contenuDeStrapi);
+        texte.innerHTML = contenuDeStrapiConvertiEnHTML;
 
         let download = document.createElement('a');
         download.className = 'download';
