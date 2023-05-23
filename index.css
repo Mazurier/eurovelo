@@ -511,15 +511,18 @@ object {
     }
     .pedalez {
         font-size: 7vw;
+       
     }
     .descrform * {
         height: 15vw;
         margin-top: 5vw;
         font-size: 4.5vw;
         padding-left: 5vw;
+        font-family: "Poppins", sans-serif;
     }
     .descrform button {
         padding-left: 0%;
+        font-family: "Poppins", sans-serif;
     }
 
 

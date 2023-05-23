@@ -27,9 +27,10 @@ return `
             <a href="redirection.html" class="headertoprightlink">Espace pro</a>
         </div>
         <div class="headerdroiteelement">
-            <a href="redirection.html" class="headertoprightlink">Carnet de voyage</a>
+        <img src="img/heart-svgrepo-com.svg" alt="iconheart"headertoprightlink" width=20><a href="redirection.html" class="headertoprightlink"> Carnet de voyage</a>
         </div>
         <div class="headerdroiteelement">
+        <img src="img/user-circle-svgrepo-com.svg" alt="iconheart"headertoprightlink" width=20>
             <a href="redirection.html" class="headertoprightlink">Espace personnel</a>
         </div>
         <div class="headerdroiteelement">
