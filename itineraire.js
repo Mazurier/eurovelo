@@ -557,10 +557,20 @@ window.addEventListener('message', function(event) {
       changecolour.setStyle(hoverStyle);
     };
     function returncolor() {
-      newid = "gpx" + Number(dataFromPage1 + 1)
+      console.log("ezdez", dataFromPage1);
+      if (dataFromPage1 == 11) {
+        gpx10.setStyle(normalStyle);
+      }
+      console.log(dataFromPage1);
+      console.log(Number(dataFromPage1 + 1));
+      newid = "gpx" + Number(dataFromPage1 + 1);
+      console.log(newid);
+      console.log(window[newid]);
       let changecolour1 = window[newid];
+      console.log("esees", newid);
       changecolour1.setStyle(normalStyle);
       newid = "gpx" + Number(dataFromPage1 - 1)
+      console.log("fzerfzecfz", newid)
       let changecolour2 = window[newid];
       changecolour2.setStyle(normalStyle);
     }
