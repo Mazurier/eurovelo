@@ -213,10 +213,6 @@ header {
         display: none;
         color: white;
     }
-
-    .navbar:click {
-
-    }
     .navbaricon {
         position: absolute;
         top: 5vw;
