@@ -70,6 +70,11 @@ header {
     text-align: center;
     justify-content: center;
 }
+.headerinputtext::placeholder{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    opacity: 70%;
+}
 .headerinputtext {
     height: 50%;
     background-color: rgba(61, 61, 61, 0.486);
@@ -80,6 +85,7 @@ header {
     color: white;
     font-size: 0.75vw;
     font-weight: 600;
+    
 }
 .headerinputnewsletter button {
     height: 86.7%;
@@ -92,6 +98,7 @@ header {
     padding-right: 0.5vw;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    font-family: "Poppins", sans-serif;
 }
 .headerlogoplace {
     display: flex;

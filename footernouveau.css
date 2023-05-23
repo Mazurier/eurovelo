@@ -63,7 +63,7 @@ footer * {
 a {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
-  font-size: 100%;
+  font-size: 80%;
 }
 
 .bouton_esp {
@@ -413,4 +413,8 @@ footer .couverture-menu-footer .realisation {
   footer .couverture-menu-footer .realisation {
     transform: none;
   }
+}
+.descrformrectangle{
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 1mm;
 }
