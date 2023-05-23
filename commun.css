@@ -72,7 +72,6 @@ header {
 }
 .headerinputtext::placeholder{
     color: white;
-    font-family: "Poppins", sans-serif;
     opacity: 70%;
 }
 .headerinputtext {

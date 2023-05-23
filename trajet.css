@@ -24,6 +24,7 @@ main {
 .leurovelo5 {
     color: #f59c00;
     font-size: 1.65vw;
+    font-family: 'Urbanist', sans-serif;
 }
 .arrow {
     height: 2.5vw;
@@ -41,6 +42,8 @@ main {
     font-size: 2vw;
     font-weight: 700;
     border-bottom: #007c74 3px solid;
+    font-family: 'Wix Madefor Display', sans-serif;
+
 }
 .trajetcategory {
     width: 100%;
@@ -57,6 +60,7 @@ main {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 2vw;
+    font-family: "Poppins", sans-serif;
 }
 .info {
     width: 100%;
@@ -89,6 +93,7 @@ main {
     align-items: center;
     text-align: center;
     justify-content: center;
+    font-family: 'Urbanist', sans-serif;
 }
 .temps:after {
     content: "timer";
@@ -114,6 +119,7 @@ main {
     align-items: center;
     justify-content: center;
     padding: 0 1vw;
+    font-family: 'Urbanist', sans-serif;
 }
 .depart:before {
     width: 9px;
@@ -141,12 +147,14 @@ main {
 }
 .endroit * {
     margin-right: 0.3vw;
+    font-family: 'Urbanist', sans-serif;
 }
 .titre {
     font-size: 3vw;
     font-weight: 700;
     margin-top: 0.75vw;
     text-align: center;
+    font-family: 'Wix Madefor Display', sans-serif;  
 }
 .texte {
     margin-top: 3vw;
@@ -157,6 +165,8 @@ main {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+    text-align: justify;
 }
 .download {
     display: flex;
@@ -239,6 +249,7 @@ main {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
 }
 .precedant::before {
     font-family: "Material Icons Outlined";
@@ -286,7 +297,7 @@ main {
     }
     .titre {
     font-size: 5vw;
-    padding: 0 2vw;        
+    padding: 0 2vw;      
     }
     .texte {
         font-size: 3vw;
@@ -297,4 +308,10 @@ main {
         font-size: 4vw;
         padding: 0 2vw;
     }
+}
+.precedant{
+    font-family: 'Urbanist', sans-serif;
+}
+.suivant{
+    font-family: 'Urbanist', sans-serif;
 }
