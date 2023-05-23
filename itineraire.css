@@ -50,7 +50,7 @@ main {
     width: 2.5vw;
 }
 .planif {
-    height: 6vw;
+    height: fit-content;
     background-color: #475995;
     width: 100%;
     color: white;
@@ -286,7 +286,7 @@ main {
         width: 14vw;
     }
     .planif {
-        height: 43vw;
+        height: fit-content;
     }
     .planifform {
         font-size: 8vw;
