@@ -558,10 +558,10 @@ window.addEventListener('message', function(event) {
     };
     function returncolor() {
       newid = "gpx" + Number(dataFromPage1 + 1)
-      var changecolour1 = window[newid];
+      let changecolour1 = window[newid];
       changecolour1.setStyle(normalStyle);
       newid = "gpx" + Number(dataFromPage1 - 1)
-      var changecolour2 = window[newid];
+      let changecolour2 = window[newid];
       changecolour2.setStyle(normalStyle);
     }
 })
