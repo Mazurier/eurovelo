@@ -212,7 +212,7 @@ header {
         top: 0%;
         left: 0%;
         width: 100vw;
-        background-color: #050505f5;
+        background-color: #475995;
         height: 100vh;
         z-index: 99900;
         position: fixed;
@@ -240,6 +240,8 @@ header {
         font-size: 8vw;
         line-height: 15vw;
         font-weight: 200;
+        font-family: 'Wix Madefor Display', sans-serif;
+        
     }
     .navbartrait {
         width: 90vw;
@@ -252,6 +254,7 @@ header {
         margin-top: 4vw;
         padding-bottom: 4vw;
         padding-left: 10vw;
+        font-family: 'Wix Madefor Display', sans-serif;
     }
     .navbarnews {
         font-size: 4vw;

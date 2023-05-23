@@ -303,6 +303,7 @@ main {
         height: 10vw;
     }
     .download a {
+        color: #f59c00;
         font-size: 3vw;
     }
     .etapesgriditem {
