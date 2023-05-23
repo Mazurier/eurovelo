@@ -268,12 +268,15 @@ main {
         flex-direction: column;
         margin-top: 24vw;
         width: 100%;
+        height: fit-content;
     }
     .navigation {
-        width: fit-content;
+        width: 100vw;
+        height: 50vh;
     }
     #map {
         width: 100%;
+        height: calc(50vh - 24vw);
     }
     .mainhead {
         height: fit-content;
@@ -337,5 +340,9 @@ main {
     }
     .etapestrajet {
         font-size: 4vw;
+    }
+    .arrow {
+        margin-top: 2vw;
+        height: 5vw;
     }
 }
