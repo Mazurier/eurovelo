@@ -50,7 +50,7 @@ Le format de chaque élément est bien défini et les éléments sont au nombre 
 De plus, dans la même logique pour pour les étapes de l'itinéraire, nous pouvons imaginer la possibilité que le client demande une modification de ces éléments.
 
 ### Leaftlet-GPX
-Leaflet-JS est une bibliothèque permettant d'ajouter des cartes en JavaScript. 
+Leaflet-JS est une api permettant d'ajouter des cartes en JavaScript. 
 Leaflet-GPX est une bibliothèque supplémentaire qui permet d'ajouter des fichiers GPX à une carte. 
 Cela a permis d'ajouter une carte incluant des fichiers GPX, ainsi que d'établir des liens entre ces fichiers et des "articles"-trajet. 
 Les articles-trajet sont situés dans une partie de navigation à gauche de la carte.
