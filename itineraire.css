@@ -346,3 +346,34 @@ main {
         height: 5vw;
     }
 }
+.mainhead{
+    font-family: 'Urbanist', sans-serif;
+    
+}
+.planifcontent{
+    font-family: 'Urbanist', sans-serif;
+}
+.buttonplanif{
+    font-family: 'Urbanist', sans-serif;
+}
+.depart{
+    font-family: 'Urbanist', sans-serif;
+}
+.arrivee{
+    font-family: 'Urbanist', sans-serif;
+}
+.download{
+    font-family: 'Urbanist', sans-serif;
+}
+.category{
+    font-family: 'Urbanist', sans-serif;
+}
+.etapestrajet{
+    font-family: 'Urbanist', sans-serif;
+}
+.difficulte{
+    font-family: 'Urbanist', sans-serif;
+}
+.etapesdescription{
+    font-family: 'Wix Madefor Display', sans-serif;
+}
