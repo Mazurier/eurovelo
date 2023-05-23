@@ -557,7 +557,8 @@ window.addEventListener('message', function(event) {
       changecolour.setStyle(hoverStyle);
     };
     function returncolor() {
-      if (dataFromPage1 == 12) {
+      console.log("ezdez", dataFromPage1);
+      if (dataFromPage1 == 11) {
         gpx10.setStyle(normalStyle);
       }
       console.log(dataFromPage1);
@@ -572,6 +573,5 @@ window.addEventListener('message', function(event) {
       console.log("fzerfzecfz", newid)
       let changecolour2 = window[newid];
       changecolour2.setStyle(normalStyle);
-      console.log("ezdez", dataFromPage1);
     }
 })
