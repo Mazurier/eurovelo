@@ -430,6 +430,7 @@ debut partis description*/
 }
 .cartephone {
     display: none;
+    text-decoration: none;
 }
 
 object {
