@@ -212,7 +212,7 @@ header {
         top: 0%;
         left: 0%;
         width: 100vw;
-        background-color: #475995;
+        background-color: #475995fa;
         height: 100vh;
         z-index: 99900;
         position: fixed;
