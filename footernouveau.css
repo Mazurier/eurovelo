@@ -60,10 +60,10 @@ footer * {
   margin: 0 0 0 3%;
 }
 
-a {
+footer a {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
-  font-size: 80%;
+  font-size: 0%;
 }
 
 .bouton_esp {
